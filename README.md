@@ -2,6 +2,19 @@
 
 Reusable components for a browser based class presenter: a source timeline, an argument that builds one claim at a time, an illustrated source path, staged source comparisons, an evidence focus slide, a regional map, an inscription reader, source based inquiries, conflict accounts, a settlement and document comparison, and a reading shelf. Open `index.html` through a local web server (`npm start`, then `http://localhost:4173`). The components have no runtime package dependency and can be reused in another page as JavaScript modules.
 
+## Publish at class.legacyofq.com
+
+The workflow in `.github/workflows/deploy-pages.yml` tests the deck and publishes its static files whenever `main` is pushed. `scripts/build-pages.sh` prepares a `_site/` folder with only the files the browser needs. The app uses relative asset paths and hash-based slide navigation, so it works at the root of this subdomain without a base-path setting.
+
+After pushing this repository to `YusufCelik/izah`:
+
+1. In **Settings → Pages → Build and deployment**, set **Source** to **GitHub Actions**. Then run **Deploy Classji to GitHub Pages** from the Actions tab. Later pushes to `main` will deploy automatically. The first push may start before Pages is enabled; rerun the workflow after changing the setting if it fails.
+2. In the same Pages settings, set **Custom domain** to `class.legacyofq.com` and save it. GitHub Actions deployments do not need a `CNAME` file in the repository.
+3. In Cloudflare DNS, add a **CNAME** record with name `class` and target `yusufcelik.github.io` (no `/izah` path). Set the domain in GitHub before adding the DNS record.
+4. Once GitHub validates the domain and issues its certificate, enable **Enforce HTTPS** in Pages settings. The site will be at `https://class.legacyofq.com/`.
+
+Run `bash scripts/build-pages.sh` locally to inspect the exact files that will be published. The `_site/` folder is ignored by Git.
+
 ## Presenter controls
 
 - Select an event in the chronology, or use Previous / Next and the left / right arrow keys.
