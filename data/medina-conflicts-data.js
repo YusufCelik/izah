@@ -7,8 +7,8 @@ export const qaynuqaConflict = {
   number: '16', era: { en: 'After Badr · 2 AH', nl: 'Na Badr · 2 AH' },
   title: 'Banū Qaynuqāʿ',
   intro: {
-    en: 'Two accounts place the rupture after Badr. One foregrounds a public challenge; another gives a specific episode of violence in the market.',
-    nl: 'Twee berichten plaatsen de breuk na Badr. Het ene benadrukt een openbare uitdaging; het andere noemt een concreet geweldsincident op de markt.',
+    en: 'Banū Qaynuqāʿ were a Jewish group in Medina allied with people of Khazraj. After the Muslim victory at Badr, later sources give different reasons for their conflict with Muḥammad’s community. Both accounts need to be read as reports.',
+    nl: 'Banū Qaynuqāʿ was een Joodse groep in Medina met bondgenoten binnen Khazraj. Na de moslimoverwinning bij Badr geven latere bronnen verschillende redenen voor hun conflict met Muḥammads gemeenschap. Beide zijn overgeleverde berichten.',
   },
   alliance: {
     side: 'khazraj', result: { en: 'Intercession succeeds', nl: 'Bemiddeling slaagt' },
@@ -55,8 +55,8 @@ export const nadirConflict = {
   number: '17', era: { en: 'After Biʾr Maʿūna · 4 AH', nl: 'Na Biʾr Maʿūna · 4 AH' },
   title: 'Banū al-Naḍīr',
   intro: {
-    en: 'The reports disagree about the setting of an alleged plot. Both end with a demand that al-Naḍīr leave Medina.',
-    nl: 'De berichten verschillen over de omstandigheden van een vermeend complot. Beide eindigen met de eis dat al-Naḍīr Medina verlaat.',
+    en: 'Banū al-Naḍīr were another Jewish group in Medina. Later reports allege a plot against Muḥammad but disagree about its setting. The group was ordered to leave; a promised intervention from Khazraj did not come.',
+    nl: 'Banū al-Naḍīr was een andere Joodse groep in Medina. Latere berichten spreken van een complot tegen Muḥammad, maar verschillen over de omstandigheden. De groep moest vertrekken; de beloofde hulp uit Khazraj bleef uit.',
   },
   alliance: {
     side: 'khazraj', result: { en: 'Promised aid fails', nl: 'Toegezegde hulp blijft uit' },
@@ -112,8 +112,8 @@ export const qurayzaConflict = {
   number: '18', era: { en: 'After the Trench · 5 AH', nl: 'Na de Slag bij de Greppel · 5 AH' },
   title: 'Banū Qurayẓa',
   intro: {
-    en: 'These witnesses give different levels of explanation: a negotiated breach, a Qurʾānic charge of support, and a report of the immediate order to march.',
-    nl: 'Deze bronnen geven uitleg op verschillende niveaus: een onderhandelde verdragsbreuk, een Qurʾānische beschuldiging van steun en een bericht over het onmiddellijke bevel tot optrekken.',
+    en: 'After besieging armies withdrew from Medina, Banū Qurayẓa surrendered to Muḥammad’s forces. Accounts differ on how the conflict began; later reports describe the killing of fighting men and captivity of women and children. We also follow their Aws allies’ unsuccessful appeal for mercy.',
+    nl: 'Nadat belegerende legers zich uit Medina hadden teruggetrokken, gaf Banū Qurayẓa zich over aan Muḥammads troepen. De bronnen verschillen over het begin van het conflict; latere berichten beschrijven het doden van strijdende mannen en de gevangenneming van vrouwen en kinderen. We volgen ook de vergeefse vraag om genade van hun bondgenoten van Aws.',
   },
   alliance: {
     side: 'aws', result: { en: 'Intercession fails', nl: 'Bemiddeling faalt' },

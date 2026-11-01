@@ -585,8 +585,8 @@ geo-regions-slide, inscription-slide, origins-slide { display: block; }
   .event-story h2 { font-size: clamp(36px, 3.7vw, 55px); }
 }
 @media (max-width: 950px) {
-  .timeline-layout { grid-template-columns: 1fr; }
-  .event-rail { border-right: 0; border-bottom: 1px solid var(--line); }
+  .timeline-layout { grid-template-columns: minmax(0, 1fr); }
+  .event-rail { min-width: 0; border-right: 0; border-bottom: 1px solid var(--line); }
   .rail-heading { height: 45px; }
   .event-list { display: flex; gap: 0; overflow-x: auto; overflow-y: hidden; padding: 0; }
   .event-list li { flex: none; }

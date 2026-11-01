@@ -41,7 +41,7 @@ export const timelineData = {
     {
       id: 'hijra', displayDate: '622', period: { en: 'MEDINAN YEARS', nl: 'MEDINASE JAREN' }, location: { en: 'MECCA → MEDINA · 04', nl: 'MEKKA → MEDINA · 04' },
       title: { en: 'The migration to Medina', nl: 'De emigratie naar Medina' }, shortTitle: { en: 'Medina / Hijra', nl: 'Medina / hidjra' },
-      summary: { en: 'Muhammad and his followers moved from Mecca to Yathrib, later called Medina. The migration became the starting point of the Islamic era.', nl: 'Muhammad en zijn volgelingen trokken van Mekka naar Yathrib, later Medina genoemd. Deze emigratie werd het beginpunt van de islamitische jaartelling.' },
+      summary: { en: 'Muḥammad and his followers moved from Mecca to Yathrib, later called Medina. This migration is the Hijra. Years marked AH are counted from it; 1 AH began in 622 CE.', nl: 'Muḥammad en zijn volgelingen trokken van Mekka naar Yathrib, later Medina genoemd. Deze verhuizing heet de hidjra. Jaren met AH worden vanaf die gebeurtenis geteld; 1 AH begon in 622 n.Chr.' },
       claims: [
         { sourceId: 'cambridgeOverview', year: 622, date: { en: '622 CE', nl: '622 n.Chr.' } },
         { sourceId: 'cambridgeHistory', year: 622, date: { en: '622 CE', nl: '622 n.Chr.' } },
@@ -50,7 +50,7 @@ export const timelineData = {
     {
       id: 'medina-pact', displayDate: '622–627', period: { en: 'MEDINAN YEARS', nl: 'MEDINASE JAREN' }, location: { en: 'MEDINA · 05', nl: 'MEDINA · 05' },
       title: { en: 'A pact for Medina', nl: 'Een verbond voor Medina' }, shortTitle: { en: 'Medina pact', nl: 'Verbond van Medina' },
-      summary: { en: 'Agreements organized relations among the emigrants, Medinan groups, and Jewish allies. Scholars differ over whether the surviving text is one early pact or a composite formed over several years.', nl: 'Afspraken regelden de verhoudingen tussen emigranten, Medinase groepen en Joodse bondgenoten. Onderzoekers verschillen van mening of de overgeleverde tekst één vroeg verbond is of uit meerdere jaren stamt.' },
+      summary: { en: 'A document preserved in later biographies sets out relations among Muḥammad’s followers and named Jewish groups in Medina. Scholars differ over whether it records one early pact or several agreements made over time.', nl: 'Een oorkonde uit latere biografieën beschrijft de verhoudingen tussen Muḥammads volgelingen en genoemde Joodse groepen in Medina. Onderzoekers verschillen van mening of zij één vroeg verbond vastlegt of meerdere afspraken uit verschillende jaren.' },
       claims: [
         { sourceId: 'lecker', year: 622, date: { en: 'c. 622 CE', nl: 'ca. 622 n.Chr.' }, note: { en: 'Lecker places the treaty soon after the Hijra.', nl: 'Lecker plaatst het verbond kort na de hidjra.' } },
         { sourceId: 'arjomand', year: 622, endYear: 627, date: { en: '622–627 CE', nl: '622–627 n.Chr.' }, note: { en: 'Arjomand reads the document as three related deeds written across these years.', nl: 'Arjomand leest de tekst als drie verwante documenten uit deze jaren.' } },
@@ -68,7 +68,7 @@ export const timelineData = {
     {
       id: 'qaynuqa', displayDate: '624', period: { en: 'MEDINAN YEARS', nl: 'MEDINASE JAREN' }, location: { en: 'MEDINA · 07', nl: 'MEDINA · 07' },
       title: { en: 'Banū Qaynuqāʿ', nl: 'Banū Qaynuqāʿ' }, shortTitle: { en: 'Banū Qaynuqāʿ', nl: 'Banū Qaynuqāʿ' },
-      summary: { en: 'After Badr, the Medinan Jewish group Banū Qaynuqāʿ was besieged and expelled. The causes and details are reported through later narrative sources.', nl: 'Na Badr werd de Joodse groep Banū Qaynuqāʿ in Medina belegerd en verdreven. Oorzaken en details zijn via latere verhalende bronnen overgeleverd.' },
+      summary: { en: 'Banū means a family or descent group. After Badr, this Jewish group in Medina was besieged and expelled. Later narratives differ over what led to the conflict.', nl: 'Banū duidt een familie of afstammingsgroep aan. Na Badr werd deze Joodse groep in Medina belegerd en verdreven. Latere verhalen verschillen over de aanleiding.', },
       claims: [
         { sourceId: 'michigan', year: 624, date: { en: 'April 624 CE', nl: 'april 624 n.Chr.' } },
         { sourceId: 'diyanet', year: 624, date: { en: '2 AH / 624 CE', nl: '2 AH / 624 n.Chr.' } },
@@ -95,7 +95,7 @@ export const timelineData = {
     {
       id: 'qurayza', displayDate: '627', period: { en: 'MEDINAN YEARS', nl: 'MEDINASE JAREN' }, location: { en: 'MEDINA · 10', nl: 'MEDINA · 10' },
       title: { en: 'Banū Qurayẓa', nl: 'Banū Qurayẓa' }, shortTitle: { en: 'Banū Qurayẓa', nl: 'Banū Qurayẓa' },
-      summary: { en: 'After the siege of Medina, Banū Qurayẓa surrendered. Later accounts describe a harsh judgment; its details and scale remain matters of historical study.', nl: 'Na het beleg van Medina gaf Banū Qurayẓa zich over. Latere bronnen beschrijven een zwaar vonnis; de details en omvang blijven onderwerp van historisch onderzoek.' },
+      summary: { en: 'After besieging armies withdrew from Medina, Banū Qurayẓa surrendered to Muḥammad’s forces. Later accounts describe killings and captivity; historians continue to study the details and scale.', nl: 'Nadat belegerende legers zich uit Medina hadden teruggetrokken, gaf Banū Qurayẓa zich over aan Muḥammads troepen. Latere bronnen beschrijven doden en gevangenneming; historici onderzoeken nog de details en omvang.' },
       claims: [{ sourceId: 'cambridgeOverview', year: 627, date: { en: '627 CE', nl: '627 n.Chr.' } }],
     },
     {

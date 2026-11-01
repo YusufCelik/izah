@@ -4,8 +4,8 @@ export const festivalInscription = {
   eyebrow: { en: 'Muḥammad and His Followers in Context · epigraphy', nl: 'Muḥammad and His Followers in Context · epigrafie' },
   title: { en: 'A festival in stone', nl: 'Een feest in steen' },
   intro: {
-    en: 'A dated inscription from northwest Arabia, roughly three centuries before Muḥammad’s preaching.',
-    nl: 'Een gedateerde inscriptie uit Noordwest-Arabië, zo’n drie eeuwen vóór Muhammads prediking.',
+    en: 'This short text was carved into rock in northwest Arabia around 302/303 CE, roughly three centuries before Muḥammad. Its reference to a Jewish festival is evidence we can date to the time of the writer.',
+    nl: 'Deze korte tekst werd rond 302/303 n.Chr. in een rots in Noordwest-Arabië gehakt, zo’n drie eeuwen vóór Muḥammad. De verwijzing naar een Joods feest is bewijs dat we kunnen dateren in de tijd van de schrijver.',
   },
   identifier: 'UJadhDA 538',
   date: { en: '302/303 CE', nl: '302/303 n.Chr.' },

@@ -8,12 +8,12 @@ export const sourceTypes = {
   eyebrow: { en: 'The archive is plural', nl: 'Het archief is veelzijdig' },
   title: { en: 'What are our sources?', nl: 'Welke bronnen hebben we?' },
   intro: {
-    en: 'To reconstruct the past, we read across material traces, Muslim traditions, and records from other communities.',
-    nl: 'Om het verleden te reconstrueren, lezen we materiële sporen, islamitische overleveringen en documenten uit andere gemeenschappen naast elkaar.',
+    en: 'There is no single archive for seventh-century Arabia. We compare objects, the Qurʾān, later Muslim reports, and records kept by Jewish and Christian communities.',
+    nl: 'Voor het Arabië van de zevende eeuw bestaat geen enkel volledig archief. We vergelijken voorwerpen, de Koran, latere islamitische berichten en bronnen uit Joodse en christelijke gemeenschappen.',
   },
   note: {
-    en: 'Images illustrate source types. Many surviving copies are later than the events they describe.',
-    nl: 'De beelden tonen voorbeelden van brontypen. Veel bewaarde kopieën zijn jonger dan de gebeurtenissen die ze beschrijven.',
+    en: 'These images are examples of source types, not photographs of the events. A manuscript can be much later than the account it preserves.',
+    nl: 'De beelden zijn voorbeelden van brontypen, geen foto’s van de gebeurtenissen. Een handschrift kan veel jonger zijn dan het verhaal dat erin staat.',
   },
   items: [
     {
@@ -45,8 +45,8 @@ export const sourceTypes = {
       title: { en: 'Hadith', nl: 'Hadith' },
       example: { en: 'Copy of al-Bukhārī · 13th c.', nl: 'Afschrift van al-Bukhārī · 13e eeuw' },
       detail: {
-        en: 'Reports about the Prophet’s words and acts come with chains of transmission and varied contexts.',
-        nl: 'Berichten over de woorden en daden van de profeet komen met overleveringsketens en uiteenlopende contexten.',
+        en: 'A hadith is a report of what the Prophet said or did. It names a chain of people said to have passed the report on; accounts can differ.',
+        nl: 'Een hadith is een bericht over wat de profeet zei of deed. Het noemt een keten van mensen die het zouden hebben doorgegeven; berichten kunnen verschillen.',
       },
       image: image('Hadith al-Bukhari manuscript.jpg'),
       record: commons('Hadith al-Bukhari manuscript.jpg'),
@@ -57,8 +57,8 @@ export const sourceTypes = {
       title: { en: 'Prophet biography', nl: 'Biografie van de profeet' },
       example: { en: 'Ibn Hishām sīra tradition · later manuscript', nl: 'Sīra-traditie van Ibn Hishām · later handschrift' },
       detail: {
-        en: 'The sīra narrates Muhammad’s life and the early community, preserved through later written recensions.',
-        nl: 'De sīra vertelt over Muhammads leven en de vroege gemeenschap, bewaard in latere schriftelijke versies.',
+        en: 'A sīra is a narrative of Muḥammad’s life and the first Muslim community. The written versions we have were assembled later.',
+        nl: 'Een sīra is een verhaal over Muḥammads leven en de eerste moslimgemeenschap. De bewaarde schriftelijke versies zijn later samengesteld.',
       },
       image: image('Nubdha Mukhtasara min al-Shi al-Waqi` fi Sirat Ibn Hisham Or. 14.087.pdf', 2),
       record: commons('Nubdha Mukhtasara min al-Shi al-Waqi` fi Sirat Ibn Hisham Or. 14.087.pdf'),
@@ -69,8 +69,8 @@ export const sourceTypes = {
       title: { en: 'Biographies · ṭabaqāt', nl: 'Biografieën · ṭabaqāt' },
       example: { en: 'Ibn Saʿd’s Ṭabaqāt · manuscript', nl: 'Ṭabaqāt van Ibn Saʿd · handschrift' },
       detail: {
-        en: 'Layered biographical collections trace people, generations, and reported relationships.',
-        nl: 'Biografische verzamelingen per generatie volgen personen, tijdgenoten en overgeleverde relaties.',
+        en: 'Ṭabaqāt collect biographies by generation. They help us ask who knew whom and how later writers remembered them.',
+        nl: 'Ṭabaqāt verzamelen levensbeschrijvingen per generatie. Ze helpen ons vragen wie wie kende en hoe latere schrijvers hen herinnerden.',
       },
       image: image('Tabaqat001.jpg'),
       record: commons('Tabaqat001.jpg'),
@@ -93,8 +93,8 @@ export const sourceTypes = {
       title: { en: 'Jewish responsa', nl: 'Joodse responsa' },
       example: { en: 'Maimonides’ responsa · 1765 edition', nl: 'Responsa van Maimonides · editie uit 1765' },
       detail: {
-        en: 'Rabbinic answers to practical questions can reveal everyday life and legal concerns in Jewish communities.',
-        nl: 'Rabbijnse antwoorden op praktische vragen tonen het dagelijks leven en juridische zorgen van Joodse gemeenschappen.',
+        en: 'Responsa are written answers by rabbis to questions from communities. They can reveal the places, problems, and people behind a question.',
+        nl: 'Responsa zijn schriftelijke antwoorden van rabbijnen op vragen uit gemeenschappen. Ze kunnen plaatsen, problemen en mensen achter een vraag zichtbaar maken.',
       },
       image: image("Pe'er ha-dor.jpg"),
       record: commons("Pe'er ha-dor.jpg"),
@@ -105,8 +105,8 @@ export const sourceTypes = {
       title: { en: 'Cairo Geniza', nl: 'Geniza van Caïro' },
       example: { en: 'Letter of Abraham Maimonides · 13th c.', nl: 'Brief van Abraham Maimonides · 13e eeuw' },
       detail: {
-        en: 'Letters and documents kept in the Geniza give unusually close views of social and commercial life.',
-        nl: 'Brieven en documenten uit de Geniza bieden een uitzonderlijk nabij beeld van sociaal en handelsleven.',
+        en: 'The Cairo Geniza is a collection of discarded manuscripts preserved in a synagogue. Its letters and documents bring us close to later social life.',
+        nl: 'De Geniza van Caïro is een verzameling afgedankte handschriften die in een synagoge bewaard bleven. De brieven en documenten tonen later dagelijks leven van dichtbij.',
       },
       image: image('Cairo Genizah Fragment.jpg'),
       record: commons('Cairo Genizah Fragment.jpg'),

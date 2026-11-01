@@ -26,7 +26,7 @@ test('shows nine source groups in a navigable serpentine order', () => {
   ]);
   assert.equal((slide.innerHTML.match(/data-source-index=/g) || []).length, 9);
   assert.match(slide.innerHTML, /What are our sources/);
-  assert.match(slide.innerHTML, /Images illustrate source types/);
+  assert.match(slide.innerHTML, /These images are examples of source types/);
   slide.select(8);
   assert.match(slide.querySelector('.source-path-detail').innerHTML, /Theophanes’ Chronographia/);
   assert.match(slide.querySelector('.source-path-detail').innerHTML, /Image record/);

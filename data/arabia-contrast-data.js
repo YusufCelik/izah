@@ -4,8 +4,8 @@ export const arabiaContrast = {
   eyebrow: { en: 'Sources in tension', nl: 'Bronnen op gespannen voet' },
   title: { en: 'Who remained in Arabia?', nl: 'Wie bleef er in Arabië?' },
   intro: {
-    en: 'A broad expulsion report meets a later record naming people of Wādī al-Qurā.',
-    nl: 'Een breed verdrijvingsbericht staat naast een latere bron die mensen uit Wādī al-Qurā noemt.',
+    en: 'One hadith reports a plan to expel Jews and Christians from Arabia. A later index of Jewish rabbis’ written answers names questioners from Wādī al-Qurā, an oasis in the region. How do these records fit together?',
+    nl: 'Een hadith noemt een voornemen om Joden en christenen uit Arabië te verdrijven. Een latere index van schriftelijke rabbijnse antwoorden noemt vraagstellers uit Wādī al-Qurā, een oase in die regio. Hoe passen deze bronnen bij elkaar?',
   },
   sides: [
     {

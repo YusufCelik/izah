@@ -6,8 +6,8 @@ export const prayerContrast = {
   eyebrow: { en: 'Tension within Ṣaḥīḥ Muslim', nl: 'Spanning binnen Ṣaḥīḥ Muslim' },
   title: { en: 'What interrupts prayer?', nl: 'Wat onderbreekt het gebed?' },
   intro: {
-    en: 'A rule attributed to the Prophet meets ʿĀʾisha’s objection in the same collection.',
-    nl: 'Een aan de Profeet toegeschreven regel staat tegenover ʿĀʾisha’s bezwaar in dezelfde verzameling.',
+    en: 'A hadith lists a woman with a donkey and a black dog as interrupting prayer. ʿĀʾisha, Muḥammad’s wife and an important transmitter, objects to the comparison and recalls seeing him pray while she lay nearby.',
+    nl: 'Een hadith noemt een vrouw samen met een ezel en een zwarte hond als onderbreking van het gebed. ʿĀʾisha, Muḥammads vrouw en een belangrijke overleveraar, verzet zich tegen die vergelijking en vertelt dat hij bad terwijl zij vlakbij lag.',
   },
   sides: [
     {
@@ -48,8 +48,8 @@ export const prayerContrast = {
     label: { en: 'Read the disagreement', nl: 'Lees het verschil' },
     title: { en: 'Two voices, one collection', nl: 'Twee stemmen, één verzameling' },
     text: {
-      en: 'Abū Dharr attributes a prayer rule to the Prophet; ʿĀʾisha challenges the comparison with animals and invokes what she observed while he prayed. What does her observation do to the rule?',
-      nl: 'Abū Dharr schrijft een gebedsregel aan de Profeet toe; ʿĀʾisha betwist de vergelijking met dieren en beroept zich op wat zij zag terwijl hij bad. Wat doet haar waarneming met de regel?',
+      en: 'Abū Dharr attributes a rule to the Prophet. ʿĀʾisha objects to its comparison with animals and points to what she saw while Muḥammad prayed. What does her experience challenge?',
+      nl: 'Abū Dharr schrijft een regel aan de profeet toe. ʿĀʾisha verzet zich tegen de vergelijking met dieren en wijst op wat zij zag terwijl Muḥammad bad. Wat stelt haar ervaring ter discussie?',
     },
     caveat: {
       en: 'The rule includes a screen; ʿĀʾisha describes lying before the worshipper rather than passing by. The reports differ in scenario as well as emphasis.',

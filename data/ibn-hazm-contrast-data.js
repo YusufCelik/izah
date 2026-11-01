@@ -7,8 +7,8 @@ export const ibnHazmContrast = {
   eyebrow: { en: 'One author · two genres', nl: 'Eén auteur · twee genres' },
   title: { en: 'Ibn Ḥazm, twice', nl: 'Ibn Ḥazm, tweemaal' },
   intro: {
-    en: 'A theological attack on Jewish scripture beside a first-person encounter with a Jewish physician.',
-    nl: 'Een theologische aanval op Joodse geschriften naast een persoonlijke ontmoeting met een Joodse arts.',
+    en: 'Ibn Ḥazm was an eleventh-century Muslim writer in al-Andalus, in today’s Spain. He attacks the Torah in a religious argument, yet remembers a Jewish physician with respect in a book about love.',
+    nl: 'Ibn Ḥazm was een islamitische schrijver uit de elfde eeuw in al-Andalus, het huidige Spanje. In een godsdienstig betoog valt hij de Thora aan; in een boek over liefde herinnert hij zich een Joodse arts met waardering.',
   },
   sides: [
     {

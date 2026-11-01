@@ -3,8 +3,8 @@ export const arabiaRegions = {
   eyebrow: { en: 'The Jewish landscape of late antique Arabia', nl: 'Het Joodse landschap van laatantiek Arabië' },
   title: { en: 'Two regions, different records', nl: 'Twee regio’s, andere bronnen' },
   intro: {
-    en: 'Locate the northern oases and the southern Ḥimyarite kingdom before looking at a single inscription.',
-    nl: 'Plaats de noordelijke oasen en het zuidelijke Ḥimyaritische koninkrijk op de kaart voordat we één inscriptie lezen.',
+    en: 'Jewish life in Arabia was not confined to Medina. The northern oases and the southern kingdom of Ḥimyar had different histories and left different kinds of evidence.',
+    nl: 'Joods leven in Arabië beperkte zich niet tot Medina. De noordelijke oasen en het zuidelijke koninkrijk Ḥimyar hadden verschillende geschiedenissen en lieten andere soorten bronnen na.',
   },
   regions: [
     {

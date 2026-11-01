@@ -28,7 +28,7 @@ test('builds the argument one numbered statement at a time', () => {
 
   slide.select(4);
   assert.equal((slide.innerHTML.match(/aria-expanded="true"/g) || []).length, 4);
-  assert.match(slide.innerHTML, /Our task is fundamentally reconstructive/);
+  assert.match(slide.innerHTML, /We must reconstruct the past/);
   assert.match(slide.innerHTML, /Argument complete/);
 });
 
@@ -40,7 +40,7 @@ test('preserves the reveal step when switching to Dutch', () => {
   assert.equal(slide.step, 3);
   assert.match(slide.innerHTML, /Meer dan duizend jaar/);
   assert.match(slide.innerHTML, /Geen tijdmachine/);
-  assert.ok(!slide.innerHTML.includes('Onze taak is fundamenteel reconstructief'));
+  assert.ok(!slide.innerHTML.includes('We moeten het verleden reconstrueren'));
   slide.previous();
   assert.equal(slide.step, 2);
 });

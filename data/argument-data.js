@@ -31,8 +31,8 @@ export const reconstructionArgument = {
       id: 'conclusion',
       kind: 'conclusion',
       text: {
-        en: 'No. Our task is fundamentally reconstructive.',
-        nl: 'Nee. Onze taak is fundamenteel reconstructief.',
+        en: 'We must reconstruct the past: build an account from the evidence that survives.',
+        nl: 'We moeten het verleden reconstrueren: een verhaal opbouwen uit de bronnen die bewaard zijn.',
       },
     },
   ],

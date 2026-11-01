@@ -5,8 +5,8 @@ export const khaybarSettlement = {
   title: 'Khaybar',
   kicker: { en: 'After the conquest · 7 AH', nl: 'Na de verovering · 7 AH' },
   intro: {
-    en: 'How did the campaign end, and what can a much later document tell us about its terms?',
-    nl: 'Hoe eindigde de veldtocht, en wat vertelt een veel later document ons over de voorwaarden?',
+    en: 'Khaybar was an oasis north of Medina. A Muslim report says many Jewish inhabitants stayed after its conquest to farm the land and share the harvest. Centuries later, a manuscript preserved in the Cairo Geniza claimed much wider privileges.',
+    nl: 'Khaybar was een oase ten noorden van Medina. Volgens een islamitisch bericht bleven veel Joodse inwoners na de verovering om het land te bewerken en de oogst te delen. Eeuwen later claimde een handschrift uit de Geniza van Caïro veel ruimere voorrechten.',
   },
   settlement: {
     heading: { en: 'A negotiated stay', nl: 'Een verblijf na onderhandeling' },

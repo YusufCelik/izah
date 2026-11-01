@@ -4,8 +4,8 @@ export const positionFocus = {
   eyebrow: { en: 'Focus · positionality', nl: 'Focus · positie van de verteller' },
   title: { en: 'Who tells the winning story?', nl: 'Wie vertelt het winnende verhaal?' },
   intro: {
-    en: 'Qurʾān 9:108 contrasts the mosque just condemned in verse 107 with one founded on piety. The praised mosque is unnamed.',
-    nl: 'Koran 9:108 stelt de moskee uit vers 107 tegenover een moskee die op godsvrucht is gegrond. De geprezen moskee blijft naamloos.',
+    en: 'Qurʾān 9:108 praises a mosque founded on devotion to God but does not name it. Later reports identify two different mosques. We can ask who passed on each identification and what ties they had to it.',
+    nl: 'Koran 9:108 prijst een moskee die op godsvrucht is gegrond, maar noemt haar niet bij naam. Latere berichten wijzen twee verschillende moskeeën aan. We kunnen vragen wie elk bericht doorgaf en welke band die persoon met de moskee had.',
   },
   verse: {
     reference: 'Qurʾān 9:108',

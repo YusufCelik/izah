@@ -3,8 +3,8 @@ export const originsInquiry = {
   eyebrow: { en: 'Origins · competing explanations', nl: 'Oorsprong · verschillende verklaringen' },
   title: { en: 'How long had they been there?', nl: 'Hoe lang waren zij er al?' },
   intro: {
-    en: 'The Jewish presence in Arabia is clear. Its beginnings invite several explanations with very different evidentiary weight.',
-    nl: 'De Joodse aanwezigheid in Arabië is duidelijk. Voor het begin ervan bestaan verklaringen met heel verschillende bewijskracht.',
+    en: 'The inscription shows Jewish festival language in Arabia by 302/303 CE. But how did Jewish communities first arrive? These five answers range from later stories to modern hypotheses; none is a dated record of first arrival.',
+    nl: 'De inscriptie toont Joodse feesttaal in Arabië rond 302/303 n.Chr. Maar hoe kwamen Joodse gemeenschappen er voor het eerst? Deze vijf antwoorden lopen uiteen van latere verhalen tot moderne hypotheses; geen ervan dateert de eerste aankomst.',
   },
   steps: [
     {
