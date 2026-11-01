@@ -56,3 +56,13 @@ The origins inquiry is `components/origins-slide.js`, fed by `data/origins-data.
 `themes.js` registers themes and `applyTheme(id)` selects one by setting `data-theme` on the document root. `applyMode('light' | 'dark')` sets the color mode independently. `themes.css` maps both modes to semantic color and typography tokens; `styles.css` uses those tokens, so future themes can be added without changing the components. The active **Folio** theme uses `#fbf5f3`, `#8daa9d`, `#522b47`, `#7b0828`, and `#0f0e0e`. Its default light mode uses the cream background; dark mode uses black with lighter text and accents. Square frames, hard shadows, and vivid signal marks are defined in the shared styles rather than in slide data. Titles and interface controls use the full-width Google font Barlow, while reading passages use Literata. Both are bundled for offline use; their SIL Open Font Licenses are in `assets/fonts/`.
 
 Run `npm test` to check bilingual data, source references, event order, date claims, theme assets, progressive argument reveal, source path selection, and staged comparisons.
+
+## Visual audit from WSL2
+
+Windows Chrome can render the deck even when the Linux browser is blocked by a sandbox. From this WSL2 workspace, run:
+
+```bash
+powershell.exe -NoProfile -Command 'Set-ExecutionPolicy -Scope Process Bypass -Force; & "\\wsl.localhost\Debian\home\ycelik\projects\classji\scripts\visual-audit.ps1" -Dependencies "\\wsl.localhost\Debian\tmp\classji-windows-playwright"'
+```
+
+On its first run, the script installs Windows Playwright into `/tmp/classji-windows-playwright`. It starts a local server, opens every slide in English light and Dutch dark mode at desktop and mobile widths, saves screenshots under `artifacts/visual-audit/`, and reports page errors or horizontal overflow. The screenshots are ignored by Git so they can be regenerated after design changes.
