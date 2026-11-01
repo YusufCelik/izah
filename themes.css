@@ -1,0 +1,130 @@
+@font-face {
+  font-family: 'Literata';
+  src: url('./assets/fonts/Literata.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 200 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('./assets/fonts/WorkSans.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('./assets/fonts/Barlow-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('./assets/fonts/Barlow-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('./assets/fonts/Barlow-ExtraBold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 800 900;
+  font-display: swap;
+}
+
+:root,
+:root[data-theme='folio'][data-mode='light'] {
+  --palette-paper: #fbf5f3;
+  --palette-sage: #8daa9d;
+  --palette-plum: #522b47;
+  --palette-wine: #7b0828;
+  --palette-black: #0f0e0e;
+
+  --color-scheme: light;
+  --page: var(--palette-paper);
+  --rail: #f3eae7;
+  --stage: #fffaf8;
+  --stage-end: #f4eeeb;
+  --surface-hover: #eee4e4;
+  --surface-active: #e9dce1;
+  --ink: var(--palette-black);
+  --display-ink: var(--palette-plum);
+  --muted: #514b4c;
+  --faint: #6b6265;
+  --line: rgba(82, 43, 71, .18);
+  --line-strong: rgba(82, 43, 71, .36);
+  --accent: #a60d3e;
+  --signal: #d52d5d;
+  --secondary: var(--palette-sage);
+  --secondary-text: var(--palette-plum);
+  --source: var(--palette-plum);
+  --range: #557569;
+  --disagreement: var(--palette-wine);
+  --focus: var(--palette-wine);
+  --control-ink: var(--palette-paper);
+  --outline: var(--palette-black);
+  --hard-shadow: var(--palette-plum);
+  --backdrop-rule: rgba(82, 43, 71, .055);
+  --topbar-bg: var(--palette-plum);
+  --topbar-ink: var(--palette-paper);
+  --rail-heading-bg: var(--palette-sage);
+  --card-caption-bg: var(--palette-paper);
+  --shape-plum: var(--palette-plum);
+  --shape-plum-text: var(--palette-plum);
+  --sage-text: #456458;
+  --backdrop-glow: rgba(141, 170, 157, .26);
+  --node-halo: rgba(123, 8, 40, .14);
+  --tick-halo: rgba(82, 43, 71, .13);
+  --conclusion-tint: rgba(141, 170, 157, .18);
+  --font-body: 'Barlow', 'Segoe UI', Arial, sans-serif;
+  --font-display: 'Literata', Georgia, serif;
+  --font-reading: 'Literata', Georgia, serif;
+  --font-interface: 'Barlow', 'Segoe UI', Arial, sans-serif;
+  --font-title: 'Barlow', 'Segoe UI', Arial, sans-serif;
+  --font-data: 'Liberation Mono', 'Courier New', monospace;
+}
+
+:root[data-theme='folio'][data-mode='dark'] {
+  --color-scheme: dark;
+  --page: var(--palette-black);
+  --rail: #1c171b;
+  --stage: #241d22;
+  --stage-end: #171417;
+  --surface-hover: #31272c;
+  --surface-active: #3a2a33;
+  --ink: var(--palette-paper);
+  --display-ink: var(--palette-paper);
+  --muted: #d8cdce;
+  --faint: #b8a7ab;
+  --line: rgba(251, 245, 243, .16);
+  --line-strong: rgba(251, 245, 243, .34);
+  --accent: #ff719a;
+  --signal: #ff4e83;
+  --secondary: var(--palette-sage);
+  --secondary-text: #b9d0c4;
+  --source: #bdd5c9;
+  --range: #a6c2b3;
+  --disagreement: #e5a5b9;
+  --focus: #e5a5b9;
+  --control-ink: var(--palette-black);
+  --outline: var(--palette-sage);
+  --hard-shadow: var(--palette-wine);
+  --backdrop-rule: rgba(141, 170, 157, .075);
+  --topbar-bg: var(--palette-plum);
+  --topbar-ink: var(--palette-paper);
+  --rail-heading-bg: var(--palette-sage);
+  --card-caption-bg: #211b20;
+  --shape-plum: var(--palette-plum);
+  --shape-plum-text: #d7b6cc;
+  --sage-text: #bdd5c9;
+  --backdrop-glow: rgba(123, 8, 40, .25);
+  --node-halo: rgba(229, 165, 185, .17);
+  --tick-halo: rgba(189, 213, 201, .14);
+  --conclusion-tint: rgba(141, 170, 157, .11);
+}

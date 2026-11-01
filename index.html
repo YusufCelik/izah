@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en" data-theme="folio" data-mode="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fbf5f3">
+  <title>Classji · Source timeline</title>
+  <meta name="description" content="An interactive research presentation with source timelines, arguments, comparisons, and evidence focus slides.">
+  <script>try { if (localStorage.getItem('classji-mode') === 'dark') document.documentElement.dataset.mode = 'dark'; } catch { /* Storage is optional. */ }</script>
+  <link rel="stylesheet" href="themes.css?v=3">
+  <link rel="stylesheet" href="styles.css?v=8">
+  <script type="module" src="app.js?v=12"></script>
+</head>
+<body>
+  <header class="app-header">
+    <a class="brand" href="#timeline" aria-label="Classji home"><span class="brand-symbol">C<span class="brand-dot">.</span></span><span>CLASSJI <small>INTERACTIVE PRESENTER</small></span></a>
+    <div class="header-actions">
+      <span class="header-caption" data-i18n="language">Language</span>
+      <div class="language-switch" role="group" aria-label="Presentation language">
+        <button type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang="nl" aria-pressed="false">NL</button>
+      </div>
+      <div class="mode-switch" role="group" aria-label="Color mode">
+        <button type="button" data-mode="light" aria-pressed="true" aria-label="Light mode"><span class="mode-symbol" aria-hidden="true">☀</span><span class="mode-label" data-i18n="light">Light</span></button>
+        <button type="button" data-mode="dark" aria-pressed="false" aria-label="Dark mode"><span class="mode-symbol" aria-hidden="true">☾</span><span class="mode-label" data-i18n="dark">Dark</span></button>
+      </div>
+      <button type="button" class="present-button" id="present-button" data-i18n="present">Present</button>
+    </div>
+  </header>
+
+  <main>
+    <nav class="deck-nav" aria-label="Presentation slides">
+      <a href="#timeline" data-slide-link="timeline" aria-current="page"><span>01</span><span data-i18n="timelineSlide">Timeline</span></a>
+      <a href="#argument" data-slide-link="argument"><span>02</span><span data-i18n="argumentSlide">The argument</span></a>
+      <a href="#sources" data-slide-link="sources"><span>03</span><span data-i18n="sourcesSlide">The sources</span></a>
+      <a href="#versus" data-slide-link="versus"><span>04</span><span data-i18n="versusSlide">In tension</span></a>
+      <a href="#prayer" data-slide-link="prayer"><span>05</span><span data-i18n="prayerSlide">Ṣaḥīḥ Muslim</span></a>
+      <a href="#focus" data-slide-link="focus"><span>06</span><span data-i18n="focusSlide">Focus</span></a>
+      <a href="#hazm" data-slide-link="hazm"><span>07</span><span data-i18n="hazmSlide">Ibn Ḥazm</span></a>
+      <a href="#geo" data-slide-link="geo"><span>08</span><span data-i18n="geoSlide">Arabian regions</span></a>
+      <a href="#inscription" data-slide-link="inscription"><span>09</span><span data-i18n="inscriptionSlide">Inscription</span></a>
+      <a href="#origins" data-slide-link="origins"><span>10</span><span data-i18n="originsSlide">Origins</span></a>
+      <a href="#prelude" data-slide-link="prelude"><span>11</span><span data-i18n="preludeSlide">Yathrib</span></a>
+      <a href="#sumayr" data-slide-link="sumayr"><span>12</span><span data-i18n="sumayrSlide">Ḥarb Sumayr</span></a>
+      <a href="#brothers" data-slide-link="brothers"><span>13</span><span data-i18n="brothersSlide">Brothers divided</span></a>
+      <a href="#blood" data-slide-link="blood"><span>14</span><span data-i18n="bloodSlide">Blood money</span></a>
+      <a href="#pact" data-slide-link="pact"><span>15</span><span data-i18n="pactSlide">Medina pact</span></a>
+      <a href="#qaynuqa" data-slide-link="qaynuqa"><span>16</span><span data-i18n="qaynuqaSlide">Qaynuqāʿ</span></a>
+      <a href="#nadir" data-slide-link="nadir"><span>17</span><span data-i18n="nadirSlide">al-Naḍīr</span></a>
+      <a href="#qurayza" data-slide-link="qurayza"><span>18</span><span data-i18n="qurayzaSlide">Qurayẓa</span></a>
+      <a href="#khaybar" data-slide-link="khaybar"><span>19</span><span data-i18n="khaybarSlide">Khaybar</span></a>
+      <a href="#reading" data-slide-link="reading"><span>20</span><span data-i18n="readingSlide">Further reading</span></a>
+    </nav>
+    <section class="deck-slide" id="timeline" aria-label="Source timeline">
+      <div class="intro">
+        <div class="intro-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="eyebrow">A history told through its sources</span></p>
+          <h1 data-i18n="title">The prophetic years<span class="title-period">.</span></h1>
+          <p class="intro-description" data-i18n="intro">From the first revelation to Muhammad’s final pilgrimage and death. Every date below belongs to a source; differing dates remain visible.</p>
+        </div>
+        <div class="era-mark" aria-hidden="true"><span>610</span><i></i><span>632</span><small>CE</small></div>
+      </div>
+      <source-timeline id="source-timeline"></source-timeline>
+    </section>
+    <section class="deck-slide argument-slide" id="argument" aria-label="Reconstructing the past" hidden>
+      <argument-build id="reconstruction-argument"></argument-build>
+    </section>
+    <section class="deck-slide sources-slide" id="sources" aria-label="Sources for reconstruction" hidden>
+      <source-path id="source-inventory"></source-path>
+    </section>
+    <section class="deck-slide versus-slide" id="versus" aria-label="Sources in tension" hidden>
+      <versus-slide id="arabia-contrast"></versus-slide>
+    </section>
+    <section class="deck-slide versus-slide" id="prayer" aria-label="Tension within Ṣaḥīḥ Muslim" hidden>
+      <versus-slide id="prayer-contrast"></versus-slide>
+    </section>
+    <section class="deck-slide focus-slide" id="focus" aria-label="Historian positionality" hidden>
+      <focus-slide id="historian-position"></focus-slide>
+    </section>
+    <section class="deck-slide versus-slide" id="hazm" aria-label="Ibn Ḥazm in two genres" hidden>
+      <versus-slide id="ibn-hazm-contrast"></versus-slide>
+    </section>
+    <section class="deck-slide geo-slide" id="geo" aria-label="Jewish communities in northern and southern Arabia" hidden>
+      <geo-regions-slide id="arabia-regions"></geo-regions-slide>
+    </section>
+    <section class="deck-slide inscription-slide" id="inscription" aria-label="Inscription UJadhDA 538" hidden>
+      <inscription-slide id="festival-inscription"></inscription-slide>
+    </section>
+    <section class="deck-slide origins-slide" id="origins" aria-label="Accounts of origins" hidden>
+      <origins-slide id="origin-stories"></origins-slide>
+    </section>
+    <section class="deck-slide evidence-slide" id="prelude" aria-label="Yathrib before Muhammad" hidden><evidence-board id="medina-prelude"></evidence-board></section>
+    <section class="deck-slide evidence-slide" id="sumayr" aria-label="Ḥarb Sumayr alliances" hidden><evidence-board id="sumayr-alliances"></evidence-board></section>
+    <section class="deck-slide evidence-slide" id="brothers" aria-label="Ibn Zayd on divided brothers" hidden><evidence-board id="brothers-report"></evidence-board></section>
+    <section class="deck-slide evidence-slide" id="blood" aria-label="Blood money hierarchy" hidden><evidence-board id="blood-money"></evidence-board></section>
+    <section class="deck-slide evidence-slide" id="pact" aria-label="Medina pact" hidden><evidence-board id="medina-pact"></evidence-board></section>
+    <section class="deck-slide conflict-slide" id="qaynuqa" aria-label="Banū Qaynuqāʿ" hidden><conflict-slide id="qaynuqa-conflict"></conflict-slide></section>
+    <section class="deck-slide conflict-slide" id="nadir" aria-label="Banū al-Naḍīr" hidden><conflict-slide id="nadir-conflict"></conflict-slide></section>
+    <section class="deck-slide conflict-slide" id="qurayza" aria-label="Banū Qurayẓa" hidden><conflict-slide id="qurayza-conflict"></conflict-slide></section>
+    <section class="deck-slide settlement-slide" id="khaybar" aria-label="Khaybar settlement and Geniza charter" hidden><settlement-slide id="khaybar-settlement"></settlement-slide></section>
+    <section class="deck-slide reading-slide" id="reading" aria-label="Further reading" hidden><reading-shelf id="further-reading"></reading-shelf></section>
+  </main>
+
+  <footer class="app-footer"><span id="footer-slide">CLASSJI / 001</span><span id="footer-copy">Dates are approximate unless a source states otherwise.</span><span data-i18n="keyboard">← → to navigate</span></footer>
+</body>
+</html>
