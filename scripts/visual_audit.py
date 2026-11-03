@@ -77,14 +77,49 @@ def main():
                                 or (item["canvasWidth"] is not None and item["canvasWidth"] < item["sectionWidth"] * 0.95)
                                 or item["language"] != lang or item["color"] != color):
                             issues.append(item)
+                    page.evaluate("location.hash = 'geo'")
+                    page.locator("#arabia-regions").evaluate("slide => slide.select(1)")
+                    page.locator(".geo-inscription-photo img").wait_for(state="visible")
+                    page.wait_for_timeout(180)
+                    page.screenshot(path=str(OUTPUT / f"{variant}-{mode}-09-geo-south.png"), full_page=True)
+                    if not page.locator(".geo-inscription-photo img").evaluate("img => img.complete && img.naturalWidth > 0"):
+                        issues.append({"variant": variant, "mode": mode, "slide": "geo", "stage": "south", "issue": "inscription image did not load"})
+                    if page.evaluate("document.body.scrollWidth > innerWidth + 2"):
+                        issues.append({"variant": variant, "mode": mode, "slide": "geo", "stage": "south", "issue": "horizontal overflow"})
+                    page.evaluate("location.hash = 'yemen'")
+                    page.locator("#fighting-yemen-contrast").evaluate("slide => slide.select(2)")
+                    page.wait_for_timeout(180)
+                    page.screenshot(path=str(OUTPUT / f"{variant}-{mode}-05-yemen-final.png"), full_page=True)
+                    if page.evaluate("document.body.scrollWidth > innerWidth + 2"):
+                        issues.append({"variant": variant, "mode": mode, "slide": "yemen", "stage": 2, "issue": "horizontal overflow"})
+                    page.evaluate("location.hash = 'jizya'")
+                    page.locator("#jizya-jarajima-contrast").evaluate("slide => slide.select(2)")
+                    page.wait_for_timeout(180)
+                    page.screenshot(path=str(OUTPUT / f"{variant}-{mode}-21-jizya-final.png"), full_page=True)
+                    if page.evaluate("document.body.scrollWidth > innerWidth + 2"):
+                        issues.append({"variant": variant, "mode": mode, "slide": "jizya", "stage": 2, "issue": "horizontal overflow"})
+                    page.evaluate("location.hash = 'variants'")
+                    page.locator("#pact-variants").evaluate("slide => slide.select(1)")
+                    page.wait_for_timeout(180)
+                    page.screenshot(path=str(OUTPUT / f"{variant}-{mode}-22-variants-selected.png"), full_page=True)
+                    if page.evaluate("document.body.scrollWidth > innerWidth + 2"):
+                        issues.append({"variant": variant, "mode": mode, "slide": "variants", "issue": "horizontal overflow"})
                     page.evaluate("location.hash = 'khaybar'")
                     page.locator('[data-settlement-stage="2"]').click()
                     page.keyboard.press("ArrowRight")
+                    if page.evaluate("location.hash") != "#jizya":
+                        issues.append({"variant": variant, "mode": mode, "navigation": "Khaybar → jizya failed"})
+                    page.locator("#jizya-jarajima-contrast").evaluate("slide => slide.select(2)")
+                    page.keyboard.press("ArrowRight")
+                    if page.evaluate("location.hash") != "#variants":
+                        issues.append({"variant": variant, "mode": mode, "navigation": "Jizya → variants failed"})
+                    page.locator("#pact-variants").evaluate("slide => slide.select(5)")
+                    page.keyboard.press("ArrowRight")
                     if page.evaluate("location.hash") != "#reading":
-                        issues.append({"variant": variant, "mode": mode, "navigation": "Khaybar → reading failed"})
+                        issues.append({"variant": variant, "mode": mode, "navigation": "Variants → reading failed"})
                     page.keyboard.press("ArrowLeft")
-                    if page.evaluate("location.hash") != "#khaybar":
-                        issues.append({"variant": variant, "mode": mode, "navigation": "Reading → Khaybar failed"})
+                    if page.evaluate("location.hash") != "#variants":
+                        issues.append({"variant": variant, "mode": mode, "navigation": "Reading → variants failed"})
                     issues.extend({"variant": variant, "mode": mode, "pageError": error} for error in page_errors)
                     context.close()
             browser.close()

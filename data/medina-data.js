@@ -3,7 +3,7 @@ const tabari = 'https://quran.ksu.edu.sa/tafseer/tabary/sura2-aya85.html';
 const pactText = 'https://islamweb.net/ar/library/content/58/586/%D9%83%D8%AA%D8%A7%D8%A8%D9%87-%D8%B5%D9%84%D9%89-%D8%A7%D9%84%D9%84%D9%87-%D8%B9%D9%84%D9%8A%D9%87-%D9%88%D8%B3%D9%84%D9%85-%D8%A8%D9%8A%D9%86-%D8%A7%D9%84%D9%85%D9%87%D8%A7%D8%AC%D8%B1%D9%8A%D9%86-%D9%88%D8%A7%D9%84%D8%A3%D9%86%D8%B5%D8%A7%D8%B1-%D9%88%D9%85%D9%88%D8%A7%D8%AF%D8%B9%D8%A9-%D9%8A%D9%87%D9%88%D8%AF';
 
 export const medinaPrelude = {
-  kind: 'story', number: '11',
+  kind: 'story', number: '12',
   eyebrow: { en: 'Yathrib before Muḥammad · later account', nl: 'Yathrib vóór Muḥammad · later verhaal' },
   title: { en: 'Who held power in Yathrib?', nl: 'Wie had de macht in Yathrib?' },
   intro: { en: 'Yathrib was the oasis city later called Medina. Jewish groups and the Arab Aws and Khazraj lived there. Centuries later, Ibn al-Athīr told a story about how power shifted between them; it is not an eyewitness record.', nl: 'Yathrib was de oasestad die later Medina werd genoemd. Er woonden Joodse groepen en de Arabische Aws en Khazraj. Eeuwen later vertelde Ibn al-Athīr hoe de macht volgens hem tussen hen verschoof; het is geen ooggetuigenverslag.' },
@@ -17,7 +17,7 @@ export const medinaPrelude = {
 };
 
 export const sumayrAlliances = {
-  kind: 'matrix', number: '12',
+  kind: 'matrix', number: '13',
   eyebrow: { en: 'Ḥarb Sumayr · competing alignments', nl: 'Ḥarb Sumayr · verschillende bondgenootschappen' },
   title: { en: 'Whose allies fought beside whom?', nl: 'Welke bondgenoten vochten met wie?' },
   intro: { en: 'Aws and Khazraj were rival Arab groups in Yathrib; Jewish groups could be their allies. Al-Ṭabarī preserves different reports about who sided with whom. Only one names the war of Sumayr.', nl: 'Aws en Khazraj waren rivaliserende Arabische groepen in Yathrib; Joodse groepen konden hun bondgenoten zijn. Al-Ṭabarī bewaart verschillende berichten over wie bij wie hoorde. Slechts één noemt de oorlog van Sumayr.' },
@@ -31,7 +31,7 @@ export const sumayrAlliances = {
 };
 
 export const brothersReport = {
-  kind: 'report', number: '13',
+  kind: 'report', number: '14',
   eyebrow: { en: 'A report read alongside a verse', nl: 'Een bericht gelezen naast een vers' },
   title: { en: 'Brothers on opposite sides', nl: 'Broeders aan weerszijden' },
   intro: { en: 'Qurʾān 2:85 condemns people for killing and expelling members of their own community; it names no Medinan groups. In a later explanation, Ibn Zayd connects the verse to divided alliances among Aws, Khazraj, and two Jewish groups.', nl: 'Koran 2:85 veroordeelt het doden en verdrijven van mensen uit de eigen gemeenschap; het noemt geen groepen uit Medina. In een latere uitleg verbindt Ibn Zayd het vers met verdeeldheid tussen Aws, Khazraj en twee Joodse groepen.' },
@@ -49,7 +49,7 @@ export const brothersReport = {
 };
 
 export const bloodMoney = {
-  kind: 'measure', number: '14',
+  kind: 'measure', number: '15',
   eyebrow: { en: 'Muḥammad in Medina · an appeal for judgment', nl: 'Muḥammad in Medina · beroep op zijn oordeel' },
   title: { en: 'One life, two blood-money rates', nl: 'Eén leven, twee bloedgeldtarieven' },
   intro: { en: 'Blood money is compensation paid after a killing. In one later explanation of Qurʾān 5:50, killing a member of Banū al-Naḍīr required twice the payment for killing a member of Banū Qurayẓa. The report says Muḥammad was asked to judge this inequality.', nl: 'Bloedgeld is een vergoeding na doodslag. In een latere uitleg van Koran 5:50 vereiste het doden van een lid van Banū al-Naḍīr een dubbel zo hoge betaling als bij een lid van Banū Qurayẓa. Volgens het bericht werd Muḥammad gevraagd over die ongelijkheid te oordelen.' },
@@ -63,7 +63,7 @@ export const bloodMoney = {
 };
 
 export const medinaPact = {
-  kind: 'clauses', number: '15',
+  kind: 'clauses', number: '16',
   eyebrow: { en: 'The Medina document · Muslims and Jews', nl: 'De oorkonde van Medina · moslims en Joden' },
   title: { en: '“One community with the believers”', nl: '‘Eén gemeenschap met de gelovigen’' },
   intro: { en: 'A document preserved in a later biography sets out how Muḥammad’s followers and named Jewish groups in Medina would live together: religion, shared defense, costs, and disputes. Select a clause to read its wording.', nl: 'Een oorkonde, bewaard in een latere biografie, beschrijft hoe Muḥammads volgelingen en genoemde Joodse groepen in Medina samen zouden leven: geloof, verdediging, kosten en geschillen. Kies een bepaling om haar tekst te lezen.' },

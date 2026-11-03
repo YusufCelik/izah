@@ -14,10 +14,10 @@ class Element {
 
 test('slide groups cover the complete sequence and translate their labels', () => {
   const ids = slideGroups.flatMap(group => group.slides);
-  assert.equal(ids.length, 20);
+  assert.equal(ids.length, 23);
   assert.equal(new Set(ids).size, ids.length);
-  assert.deepEqual(slideGroups[1].slides, ['versus', 'prayer', 'focus', 'hazm']);
-  assert.deepEqual(slideGroups[4].slides, ['qaynuqa', 'nadir', 'qurayza', 'khaybar']);
+  assert.deepEqual(slideGroups[1].slides, ['versus', 'yemen', 'prayer', 'focus', 'hazm']);
+  assert.deepEqual(slideGroups[4].slides, ['qaynuqa', 'nadir', 'qurayza', 'khaybar', 'jizya', 'variants']);
   const nav = new Element();
   const links = ids.map(id => new Element(id));
   nav.querySelectorAll = () => links;

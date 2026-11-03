@@ -262,6 +262,11 @@ versus-slide { display: block; }
 .versus-reading small a { color: var(--source); font-weight: 700; text-decoration: none; }
 .versus-reading small a:hover { color: var(--accent); text-decoration: underline; }
 .versus-reading-pending { margin: 0; color: var(--faint); font: italic 20px var(--font-display); }
+#fighting-yemen-contrast .versus-reading p:not(.section-kicker) { font-size: 15px; line-height: 1.5; }
+#fighting-yemen-contrast .versus-reading small { margin-top: 8px; font-size: 12px; line-height: 1.45; }
+#jizya-jarajima-contrast .versus-original p:lang(ar) { font-family: 'Amiri Quran', 'Traditional Naskh', serif; font-size: 23px; line-height: 1.5; }
+#jizya-jarajima-contrast .versus-reading p:not(.section-kicker) { font-size: 15px; line-height: 1.5; }
+#jizya-jarajima-contrast .versus-reading small { margin-top: 8px; font-size: 12px; line-height: 1.45; }
 .versus-bottom { min-height: 56px; display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 10px clamp(24px, 3.2vw, 55px); border-top: 1px solid var(--line); }
 .versus-progress { width: 140px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
 .versus-progress span { height: 4px; background: var(--line-strong); }
@@ -428,6 +433,7 @@ geo-regions-slide, inscription-slide, origins-slide { display: block; }
 .geo-fraction, .origins-fraction { flex: none; color: var(--accent); font: 26px var(--font-data); white-space: nowrap; }
 .geo-fraction i, .origins-fraction i { color: var(--faint); font-style: normal; }
 .geo-layout { flex: 1; min-height: 0; display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(330px, .85fr); }
+.geo-layout.has-inscription { grid-template-columns: minmax(0, 1fr) minmax(490px, 1fr); }
 .geo-map-wrap { min-width: 0; display: flex; flex-direction: column; background: var(--rail); border-right: 2px solid var(--outline); }
 .geo-map { display: block; flex: 1; width: 100%; min-height: 420px; }
 .geo-sea { fill: var(--rail); }
@@ -444,6 +450,11 @@ geo-regions-slide, inscription-slide, origins-slide { display: block; }
 .geo-site.is-active text { fill: var(--ink); }
 .geo-map-credit { display: flex; justify-content: space-between; gap: 15px; padding: 9px 15px; border-top: 1px solid var(--line); color: var(--faint); font-size: 10px; line-height: 1.3; }
 .geo-map-credit a { flex: none; color: var(--source); text-decoration: none; font-weight: 700; }
+.geo-inscription-photo { margin: 0; border-top: 2px solid var(--outline); background: var(--stage); }
+.geo-inscription-photo img { display: block; width: 100%; height: clamp(160px, 17vw, 240px); object-fit: cover; object-position: center 48%; }
+.geo-inscription-photo figcaption { padding: 6px 12px 7px; border-top: 1px solid var(--line); font: 10px/1.3 var(--font-body); }
+.geo-inscription-photo a { color: var(--source); text-decoration: none; }
+.geo-inscription-photo a:hover { color: var(--accent); text-decoration: underline; }
 .geo-panel { min-width: 0; display: flex; flex-direction: column; padding: 24px; }
 .geo-panel > .section-kicker { margin-bottom: 14px; }
 .geo-region-tabs { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
@@ -462,6 +473,21 @@ geo-regions-slide, inscription-slide, origins-slide { display: block; }
 .geo-region-content > p:not(.geo-region-subtitle) { max-width: 450px; margin: 0 0 15px; color: var(--ink); font: 15px/1.5 var(--font-reading); }
 .geo-region-content a { color: var(--source); font-size: 11px; font-weight: 800; text-decoration: none; }
 .geo-region-content a:hover, .geo-map-credit a:hover { color: var(--accent); text-decoration: underline; }
+.has-inscription .geo-region-content { padding-top: 15px; }
+.has-inscription .geo-region-number { font-size: 39px; }
+.has-inscription .geo-region-subtitle { margin-top: 9px; }
+.has-inscription .geo-region-content h3 { margin-bottom: 10px; font-size: clamp(30px, 2.5vw, 40px); }
+.has-inscription .geo-site-list { margin-bottom: 11px; }
+.has-inscription .geo-region-content > p:not(.geo-region-subtitle) { max-width: none; margin-bottom: 7px; font-size: 13px; line-height: 1.38; }
+.geo-inscription { margin-top: 17px; padding: 13px 15px 14px; border: 2px solid var(--outline); border-left: 7px solid var(--accent); background: var(--rail); }
+.geo-inscription-heading { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 5px 15px; }
+.geo-inscription-heading span, .geo-inscription-script-label { color: var(--accent); font: 800 10px/1.3 var(--font-interface); letter-spacing: .06em; text-transform: uppercase; }
+.geo-inscription-heading h4 { margin: 0; color: var(--display-ink); font: 800 18px/1.15 var(--font-title); }
+.geo-inscription .geo-inscription-script-label { margin: 10px 0 4px; color: var(--muted); }
+.geo-inscription blockquote { margin: 0; padding: 5px 0 6px; color: var(--display-ink); font: 20px/1.55 'Amiri Quran', 'Noto Naskh Arabic', serif; text-align: right; }
+.geo-inscription .geo-inscription-translation { max-width: none; margin: 5px 0 7px; color: var(--source); font: 16px/1.38 var(--font-reading); }
+.geo-inscription .geo-inscription-note { max-width: none; margin: 0 0 7px; color: var(--muted); font: 11px/1.35 var(--font-body); }
+.geo-inscription > a { font: 800 10px/1.25 var(--font-title); }
 .geo-bottom, .origins-bottom { display: flex; align-items: center; justify-content: space-between; gap: 20px; min-height: 58px; padding: 11px clamp(24px, 3.2vw, 55px); border-top: 2px solid var(--outline); }
 .geo-bottom > span { color: var(--faint); font-size: 10px; }
 .geo-bottom > div, .inscription-controls, .origins-bottom > div:last-child { display: flex; gap: 20px; flex: none; }
@@ -530,8 +556,10 @@ geo-regions-slide, inscription-slide, origins-slide { display: block; }
 
 @media (max-width: 950px) {
   .geo-layout, .inscription-body { grid-template-columns: 1fr; }
+  .geo-layout.has-inscription { grid-template-columns: 1fr; }
   .geo-map-wrap, .inscription-visual { border-right: 0; border-bottom: 2px solid var(--outline); }
   .geo-map { max-height: 500px; }
+  .geo-inscription-photo img { height: 220px; }
   .inscription-photo-frame img { max-height: 440px; }
   .geo-region-content { padding-top: 17px; }
   .origins-layout { grid-template-columns: 220px minmax(0, 1fr); }
@@ -547,6 +575,10 @@ geo-regions-slide, inscription-slide, origins-slide { display: block; }
   .geo-map-wrap { overflow-x: auto; }
   .geo-map { min-width: 620px; min-height: 420px; }
   .geo-map-credit { min-width: 620px; }
+  .has-inscription .geo-map { min-width: 0; min-height: 280px; height: 280px; }
+  .has-inscription .geo-site text { font-size: 27px; }
+  .has-inscription .geo-map-credit { min-width: 0; }
+  .geo-inscription-photo img { height: 205px; }
   .geo-panel { padding: 18px; }
   .geo-bottom, .origins-bottom { flex-wrap: wrap; padding: 13px 18px; }
   .geo-bottom > div, .origins-bottom > div:last-child { width: 100%; justify-content: space-between; }
@@ -1044,6 +1076,88 @@ reading-shelf { display: block; }
 .reading-shelf-bottom { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 12px clamp(22px, 3vw, 50px); border-top: 2px solid var(--outline); background: var(--rail); }
 .reading-shelf-pages { display: flex; gap: 7px; }
 .reading-shelf-pages button { width: 33px; height: 31px; border: 2px solid var(--outline); background: var(--stage); color: var(--source); font: 800 11px var(--font-data); cursor: pointer; }
+
+variant-matrix { display: block; }
+.variant-canvas { margin: 27px 0 0; border: 2px solid var(--outline); background: var(--stage); box-shadow: 8px 8px 0 var(--hard-shadow); }
+.variant-heading { display: flex; align-items: end; justify-content: space-between; gap: 30px; padding: 23px clamp(24px, 3.3vw, 56px); border-left: 9px solid var(--accent); border-bottom: 1px solid var(--line); background: var(--stage); }
+.variant-heading .section-kicker { margin-bottom: 9px; }
+.variant-heading h2 { margin-bottom: 7px; color: var(--display-ink); font: 800 clamp(36px, 3.9vw, 56px)/1 var(--font-title); letter-spacing: -.02em; }
+.variant-heading p:last-child { max-width: 1000px; margin: 0; color: var(--muted); font-size: 14px; line-height: 1.45; }
+.variant-count { flex: none; color: var(--accent); font: 27px var(--font-data); white-space: nowrap; }
+.variant-count i { padding: 0 6px; color: var(--faint); font-style: normal; }
+.variant-key { display: flex; align-items: center; gap: 10px; padding: 12px clamp(24px, 3.3vw, 56px); border-bottom: 1px solid var(--line); background: var(--rail); color: var(--source); font: 800 11px var(--font-title); letter-spacing: .06em; text-transform: uppercase; }
+.variant-key-mark { color: var(--accent); font: 25px/1 var(--font-title); }
+.variant-table-wrap { overflow-x: auto; }
+.variant-table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+.variant-table th, .variant-table td { border-bottom: 1px solid var(--line); text-align: left; }
+.variant-table thead th { padding: 13px 16px; background: var(--rail-heading-bg); color: var(--palette-black); font: 800 11px var(--font-title); letter-spacing: .07em; text-transform: uppercase; }
+.variant-table thead th:first-child { width: 40%; padding-left: clamp(24px, 3.3vw, 56px); }
+.variant-table thead th:nth-child(2) { width: 25%; }
+.variant-table tbody tr { background: var(--stage); }
+.variant-table tbody tr:nth-child(even) { background: var(--rail); }
+.variant-table tbody tr.is-selected { background: var(--surface-active); }
+.variant-table tbody tr.is-selected th { box-shadow: inset 7px 0 var(--accent); }
+.variant-table tbody th { padding: 0; font-weight: 400; }
+.variant-table tbody td { padding: 10px 16px; color: var(--ink); font: 700 15px/1.25 var(--font-title); }
+.variant-table tbody button { display: flex; align-items: center; gap: 14px; width: 100%; min-height: 63px; padding: 10px 16px 10px clamp(24px, 3.3vw, 56px); border: 0; background: transparent; color: var(--ink); text-align: left; cursor: pointer; }
+.variant-table tbody button:hover strong { color: var(--accent); }
+.variant-table tbody button strong { display: block; font: 800 16px/1.2 var(--font-title); }
+.variant-table tbody button small { display: block; margin-top: 3px; color: var(--muted); font: 10px var(--font-data); }
+.variant-row-number { flex: none; display: grid; place-items: center; width: 29px; height: 29px; background: var(--secondary); color: var(--palette-black); font: 12px var(--font-data); }
+.is-selected .variant-row-number { background: var(--accent); color: var(--control-ink); }
+.variant-status { display: inline-flex; align-items: center; gap: 10px; min-width: 175px; padding: 7px 11px; border: 1px solid var(--line-strong); color: var(--source); background: var(--stage); font: 800 12px var(--font-title); }
+.variant-status-children { border-color: var(--secondary); }
+.variant-status-both { border-color: var(--accent); color: var(--accent); }
+.variant-status-bars { display: inline-flex; gap: 3px; }
+.variant-status-bars i { width: 9px; height: 12px; border: 1px solid var(--line-strong); background: transparent; }
+.variant-status-children .variant-status-bars i:last-child { border-color: var(--secondary); background: var(--secondary); }
+.variant-status-both .variant-status-bars i { border-color: var(--accent); background: var(--accent); }
+.variant-detail { display: grid; grid-template-columns: 35% 1fr; gap: 25px; padding: 18px clamp(24px, 3.3vw, 56px); border-top: 3px solid var(--secondary); background: var(--stage-end); }
+.variant-detail .section-kicker { margin-bottom: 3px; }
+.variant-detail h3 { margin: 0; color: var(--display-ink); font: 800 23px/1.15 var(--font-title); }
+.variant-detail strong { color: var(--source); font: 800 10px var(--font-title); letter-spacing: .08em; text-transform: uppercase; }
+.variant-detail p { margin: 5px 0 7px; color: var(--ink); font: 15px/1.45 var(--font-reading); }
+.variant-excerpt { margin: 9px 0 0; padding: 9px 15px; border-right: 5px solid var(--accent); background: var(--stage); color: var(--display-ink); font: 24px/1.6 'Amiri Quran', 'Noto Naskh Arabic', serif; text-align: right; }
+.variant-detail .variant-excerpt-translation { margin: 10px 0 12px; color: var(--display-ink); font: 17px/1.45 var(--font-reading); }
+.variant-detail .variant-detail-note { margin: 0 0 7px; color: var(--muted); font: 13px/1.4 var(--font-body); }
+.variant-detail a, .variant-conclusion a { color: var(--source); font: 700 11px var(--font-title); text-decoration: none; }
+.variant-detail a:hover, .variant-conclusion a:hover { color: var(--accent); text-decoration: underline; }
+.variant-conclusion { padding: 15px clamp(24px, 3.3vw, 56px); border-top: 1px solid var(--line); background: var(--rail); }
+.variant-conclusion p { margin: 0 0 5px; color: var(--display-ink); font: 700 16px/1.4 var(--font-reading); }
+.variant-conclusion small { color: var(--muted); font: 12px/1.4 var(--font-body); }
+.variant-bottom { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 16px clamp(24px, 3.3vw, 56px); border-top: 1px solid var(--line); background: var(--stage); }
+.variant-progress { width: 180px; height: 5px; background: var(--line-strong); }
+.variant-progress i { display: block; width: var(--progress); height: 100%; background: var(--accent); transition: width .2s; }
+.variant-bottom > div { display: flex; gap: 20px; }
+.variant-bottom button { border: 0; background: transparent; color: var(--source); cursor: pointer; font: 800 12px var(--font-title); }
+.variant-bottom button:hover { color: var(--accent); }
+
+@media (max-width: 700px) {
+  .variant-canvas { margin-top: 18px; box-shadow: 5px 5px 0 var(--hard-shadow); }
+  .variant-heading { align-items: start; gap: 8px; padding: 20px; }
+  .variant-heading h2 { font-size: 35px; }
+  .variant-heading p:last-child { font-size: 12px; }
+  .variant-count { font-size: 16px; }
+  .variant-key { padding: 10px 20px; font-size: 9px; }
+  .variant-table, .variant-table tbody, .variant-table tbody tr, .variant-table tbody th, .variant-table tbody td { display: block; width: 100%; }
+  .variant-table thead { display: none; }
+  .variant-table tbody tr { padding: 4px 0 12px; border-bottom: 1px solid var(--line); }
+  .variant-table tbody th, .variant-table tbody td { border: 0; }
+  .variant-table tbody button { min-height: 52px; padding: 9px 18px; }
+  .variant-table tbody button strong { font-size: 15px; }
+  .variant-table tbody td { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 3px 18px; font-size: 13px; }
+  .variant-table tbody td::before { content: attr(data-label); color: var(--muted); font: 700 9px var(--font-title); letter-spacing: .05em; text-transform: uppercase; }
+  .variant-table tbody td:last-child { align-items: start; }
+  .variant-status { min-width: 156px; font-size: 11px; }
+  .variant-detail { grid-template-columns: 1fr; gap: 10px; padding: 18px; }
+  .variant-detail h3 { font-size: 20px; }
+  .variant-excerpt { font-size: 21px; }
+  .variant-detail .variant-excerpt-translation { font-size: 15px; }
+  .variant-conclusion { padding: 16px 18px; }
+  .variant-bottom { padding: 15px 18px; }
+  .variant-progress { width: 62px; }
+  .variant-bottom > div { gap: 13px; }
+}
 .reading-shelf-pages button[aria-pressed='true'] { background: var(--palette-plum); color: var(--palette-paper); }
 .reading-shelf-controls { display: flex; gap: 18px; }
 .reading-shelf-controls button { border: 0; background: none; color: var(--accent); font: 800 12px var(--font-interface); cursor: pointer; }

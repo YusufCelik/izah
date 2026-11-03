@@ -4,7 +4,7 @@ const nadirSira = 'https://www.islamweb.net/ar/library/content/58/1095/%D8%AE%D8
 const qurayzaSira = 'https://www.islamweb.net/amp/ar/library/content/58/1164/%D9%86%D8%B2%D9%88%D9%84-%D8%A8%D9%86%D9%8A-%D9%82%D8%B1%D9%8A%D8%B8%D8%A9-%D8%B9%D9%84%D9%89-%D8%AD%D9%83%D9%85-%D8%A7%D9%84%D8%B1%D8%B3%D9%88%D9%84-%D9%88%D8%AA%D8%AD%D9%83%D9%8A%D9%85-%D8%B3%D8%B9%D8%AF';
 
 export const qaynuqaConflict = {
-  number: '16', era: { en: 'After Badr · 2 AH', nl: 'Na Badr · 2 AH' },
+  number: '17', era: { en: 'After Badr · 2 AH', nl: 'Na Badr · 2 AH' },
   title: 'Banū Qaynuqāʿ',
   intro: {
     en: 'Banū Qaynuqāʿ were a Jewish group in Medina allied with people of Khazraj. After the Muslim victory at Badr, later sources give different reasons for their conflict with Muḥammad’s community. Both accounts need to be read as reports.',
@@ -52,7 +52,7 @@ export const qaynuqaConflict = {
 };
 
 export const nadirConflict = {
-  number: '17', era: { en: 'After Biʾr Maʿūna · 4 AH', nl: 'Na Biʾr Maʿūna · 4 AH' },
+  number: '18', era: { en: 'After Biʾr Maʿūna · 4 AH', nl: 'Na Biʾr Maʿūna · 4 AH' },
   title: 'Banū al-Naḍīr',
   intro: {
     en: 'Banū al-Naḍīr were another Jewish group in Medina. Later reports allege a plot against Muḥammad but disagree about its setting. The group was ordered to leave; a promised intervention from Khazraj did not come.',
@@ -109,7 +109,7 @@ export const nadirConflict = {
 };
 
 export const qurayzaConflict = {
-  number: '18', era: { en: 'After the Trench · 5 AH', nl: 'Na de Slag bij de Greppel · 5 AH' },
+  number: '19', era: { en: 'After the Trench · 5 AH', nl: 'Na de Slag bij de Greppel · 5 AH' },
   title: 'Banū Qurayẓa',
   intro: {
     en: 'After besieging armies withdrew from Medina, Banū Qurayẓa surrendered to Muḥammad’s forces. Accounts differ on how the conflict began; later reports describe the killing of fighting men and captivity of women and children. We also follow their Aws allies’ unsuccessful appeal for mercy.',

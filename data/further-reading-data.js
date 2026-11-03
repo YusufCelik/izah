@@ -1,7 +1,7 @@
 // Bibliographic data stays separate from the reusable reading-shelf component.
 // Original list numbers are retained so citations can be matched to the source list.
 export const furtherReading = {
-  number: '20',
+  number: '23',
   title: { en: 'Further reading', nl: 'Verder lezen' },
   intro: {
     en: 'A small library for the questions raised in this presentation. Select a book to open its publisher or catalogue record.',

@@ -10,7 +10,7 @@ export const slideGroups = [
     id: 'challenges',
     label: { en: 'The challenges facing reconstruction', nl: 'Uitdagingen voor reconstructie' },
     tone: 'signal',
-    slides: ['versus', 'prayer', 'focus', 'hazm'],
+    slides: ['versus', 'yemen', 'prayer', 'focus', 'hazm'],
   },
   {
     id: 'arabia',
@@ -28,7 +28,7 @@ export const slideGroups = [
     id: 'conflicts',
     label: { en: 'Conflict and its outcomes', nl: 'Conflict en de afloop' },
     tone: 'signal',
-    slides: ['qaynuqa', 'nadir', 'qurayza', 'khaybar'],
+    slides: ['qaynuqa', 'nadir', 'qurayza', 'khaybar', 'jizya', 'variants'],
   },
   {
     id: 'library',

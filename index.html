@@ -8,8 +8,8 @@
   <meta name="description" content="An interactive research presentation with source timelines, arguments, comparisons, and evidence focus slides.">
   <script>try { if (localStorage.getItem('classji-mode') === 'dark') document.documentElement.dataset.mode = 'dark'; } catch { /* Storage is optional. */ }</script>
   <link rel="stylesheet" href="themes.css?v=3">
-  <link rel="stylesheet" href="styles.css?v=9">
-  <script type="module" src="app.js?v=14"></script>
+  <link rel="stylesheet" href="styles.css?v=15">
+  <script type="module" src="app.js?v=19"></script>
 </head>
 <body>
   <header class="app-header">
@@ -34,22 +34,25 @@
       <a href="#argument" data-slide-link="argument"><span>02</span><span data-i18n="argumentSlide">The argument</span></a>
       <a href="#sources" data-slide-link="sources"><span>03</span><span data-i18n="sourcesSlide">The sources</span></a>
       <a href="#versus" data-slide-link="versus"><span>04</span><span data-i18n="versusSlide">In tension</span></a>
-      <a href="#prayer" data-slide-link="prayer"><span>05</span><span data-i18n="prayerSlide">Ṣaḥīḥ Muslim</span></a>
-      <a href="#focus" data-slide-link="focus"><span>06</span><span data-i18n="focusSlide">Focus</span></a>
-      <a href="#hazm" data-slide-link="hazm"><span>07</span><span data-i18n="hazmSlide">Ibn Ḥazm</span></a>
-      <a href="#geo" data-slide-link="geo"><span>08</span><span data-i18n="geoSlide">Arabian regions</span></a>
-      <a href="#inscription" data-slide-link="inscription"><span>09</span><span data-i18n="inscriptionSlide">Inscription</span></a>
-      <a href="#origins" data-slide-link="origins"><span>10</span><span data-i18n="originsSlide">Origins</span></a>
-      <a href="#prelude" data-slide-link="prelude"><span>11</span><span data-i18n="preludeSlide">Yathrib</span></a>
-      <a href="#sumayr" data-slide-link="sumayr"><span>12</span><span data-i18n="sumayrSlide">Ḥarb Sumayr</span></a>
-      <a href="#brothers" data-slide-link="brothers"><span>13</span><span data-i18n="brothersSlide">Brothers divided</span></a>
-      <a href="#blood" data-slide-link="blood"><span>14</span><span data-i18n="bloodSlide">Blood money</span></a>
-      <a href="#pact" data-slide-link="pact"><span>15</span><span data-i18n="pactSlide">Medina pact</span></a>
-      <a href="#qaynuqa" data-slide-link="qaynuqa"><span>16</span><span data-i18n="qaynuqaSlide">Qaynuqāʿ</span></a>
-      <a href="#nadir" data-slide-link="nadir"><span>17</span><span data-i18n="nadirSlide">al-Naḍīr</span></a>
-      <a href="#qurayza" data-slide-link="qurayza"><span>18</span><span data-i18n="qurayzaSlide">Qurayẓa</span></a>
-      <a href="#khaybar" data-slide-link="khaybar"><span>19</span><span data-i18n="khaybarSlide">Khaybar</span></a>
-      <a href="#reading" data-slide-link="reading"><span>20</span><span data-i18n="readingSlide">Further reading</span></a>
+      <a href="#yemen" data-slide-link="yemen"><span>05</span><span data-i18n="yemenSlide">Fight and tax</span></a>
+      <a href="#prayer" data-slide-link="prayer"><span>06</span><span data-i18n="prayerSlide">Ṣaḥīḥ Muslim</span></a>
+      <a href="#focus" data-slide-link="focus"><span>07</span><span data-i18n="focusSlide">Focus</span></a>
+      <a href="#hazm" data-slide-link="hazm"><span>08</span><span data-i18n="hazmSlide">Ibn Ḥazm</span></a>
+      <a href="#geo" data-slide-link="geo"><span>09</span><span data-i18n="geoSlide">Arabian regions</span></a>
+      <a href="#inscription" data-slide-link="inscription"><span>10</span><span data-i18n="inscriptionSlide">Inscription</span></a>
+      <a href="#origins" data-slide-link="origins"><span>11</span><span data-i18n="originsSlide">Origins</span></a>
+      <a href="#prelude" data-slide-link="prelude"><span>12</span><span data-i18n="preludeSlide">Yathrib</span></a>
+      <a href="#sumayr" data-slide-link="sumayr"><span>13</span><span data-i18n="sumayrSlide">Ḥarb Sumayr</span></a>
+      <a href="#brothers" data-slide-link="brothers"><span>14</span><span data-i18n="brothersSlide">Brothers divided</span></a>
+      <a href="#blood" data-slide-link="blood"><span>15</span><span data-i18n="bloodSlide">Blood money</span></a>
+      <a href="#pact" data-slide-link="pact"><span>16</span><span data-i18n="pactSlide">Medina pact</span></a>
+      <a href="#qaynuqa" data-slide-link="qaynuqa"><span>17</span><span data-i18n="qaynuqaSlide">Qaynuqāʿ</span></a>
+      <a href="#nadir" data-slide-link="nadir"><span>18</span><span data-i18n="nadirSlide">al-Naḍīr</span></a>
+      <a href="#qurayza" data-slide-link="qurayza"><span>19</span><span data-i18n="qurayzaSlide">Qurayẓa</span></a>
+      <a href="#khaybar" data-slide-link="khaybar"><span>20</span><span data-i18n="khaybarSlide">Khaybar</span></a>
+      <a href="#jizya" data-slide-link="jizya"><span>21</span><span data-i18n="jizyaSlide">Jizya in tension</span></a>
+      <a href="#variants" data-slide-link="variants"><span>22</span><span data-i18n="variantsSlide">The pact varies</span></a>
+      <a href="#reading" data-slide-link="reading"><span>23</span><span data-i18n="readingSlide">Further reading</span></a>
     </nav>
     <section class="deck-slide" id="timeline" aria-label="Source timeline">
       <div class="intro">
@@ -70,6 +73,9 @@
     </section>
     <section class="deck-slide versus-slide" id="versus" aria-label="Sources in tension" hidden>
       <versus-slide id="arabia-contrast"></versus-slide>
+    </section>
+    <section class="deck-slide versus-slide" id="yemen" aria-label="Fighting and religious freedom in Yemen reports" hidden>
+      <versus-slide id="fighting-yemen-contrast"></versus-slide>
     </section>
     <section class="deck-slide versus-slide" id="prayer" aria-label="Tension within Ṣaḥīḥ Muslim" hidden>
       <versus-slide id="prayer-contrast"></versus-slide>
@@ -98,6 +104,8 @@
     <section class="deck-slide conflict-slide" id="nadir" aria-label="Banū al-Naḍīr" hidden><conflict-slide id="nadir-conflict"></conflict-slide></section>
     <section class="deck-slide conflict-slide" id="qurayza" aria-label="Banū Qurayẓa" hidden><conflict-slide id="qurayza-conflict"></conflict-slide></section>
     <section class="deck-slide settlement-slide" id="khaybar" aria-label="Khaybar settlement and Geniza charter" hidden><settlement-slide id="khaybar-settlement"></settlement-slide></section>
+    <section class="deck-slide versus-slide" id="jizya" aria-label="Jizya and the Jarājima" hidden><versus-slide id="jizya-jarajima-contrast"></versus-slide></section>
+    <section class="deck-slide variant-slide" id="variants" aria-label="Variants of the Pact of ʿUmar" hidden><variant-matrix id="pact-variants"></variant-matrix></section>
     <section class="deck-slide reading-slide" id="reading" aria-label="Further reading" hidden><reading-shelf id="further-reading"></reading-shelf></section>
   </main>
 

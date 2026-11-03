@@ -1,7 +1,7 @@
 // The conquest settlement and the later Geniza charter are different claims.
 // Keep their source records separate when reusing this slide.
 export const khaybarSettlement = {
-  number: '19',
+  number: '20',
   title: 'Khaybar',
   kicker: { en: 'After the conquest · 7 AH', nl: 'Na de verovering · 7 AH' },
   intro: {

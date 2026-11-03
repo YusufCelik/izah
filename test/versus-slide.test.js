@@ -1,6 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { arabiaContrast } from '../data/arabia-contrast-data.js';
+import { fightingYemenContrast } from '../data/fighting-yemen-contrast-data.js';
+import { jizyaJarajimaContrast } from '../data/jizya-jarajima-contrast-data.js';
 import { ibnHazmContrast } from '../data/ibn-hazm-contrast-data.js';
 
 globalThis.HTMLElement = class extends EventTarget {
@@ -74,6 +76,42 @@ test('original-script direction is data, so the component can show other scripts
   slide.data = comparison;
   slide.select(1);
   assert.match(slide.innerHTML, /lang="ar" dir="rtl"/);
+});
+
+test('Yemen comparison keeps the broad hadith and reported letter in their requested positions', () => {
+  const slide = new VersusSlide();
+  slide.data = fightingYemenContrast;
+  assert.match(slide.innerHTML, /I have been commanded to fight against people/);
+  assert.match(slide.innerHTML, /establish prayer, and pay Zakat/);
+  assert.ok(!slide.innerHTML.includes('ولا يفتن يهودي'));
+  slide.next();
+  assert.match(slide.innerHTML, /ولا يفتن يهودي عن يهوديته/);
+  assert.match(slide.innerHTML, /No Jew is to be pressured to leave Judaism/);
+  assert.match(slide.innerHTML, /lang="ar" dir="rtl"/);
+  slide.next();
+  assert.match(slide.innerHTML, /its named chain ends with al-Ḥakam/);
+  slide.lang = 'nl';
+  assert.match(slide.innerHTML, /Geen Jood mag onder druk worden gezet/);
+  assert.equal(fightingYemenContrast.sides[0].sources[0].url, 'https://sunnah.com/muslim:22');
+  assert.match(fightingYemenContrast.sides[1].sources[0].url, /ablibrary\.net/);
+});
+
+test('jizya comparison reveals the full verse before the reported Jarājima terms', () => {
+  const slide = new VersusSlide();
+  slide.data = jizyaJarajimaContrast;
+  assert.match(slide.innerHTML, /حَتَّىٰ يُعْطُوا الْجِزْيَةَ/);
+  assert.match(slide.innerHTML, /until they pay the jizya/);
+  assert.ok(!slide.innerHTML.includes('وأن لا يؤخذوا بالجزية'));
+  slide.next();
+  assert.match(slide.innerHTML, /وأن لا يؤخذوا بالجزية/);
+  assert.match(slide.innerHTML, /scouts and frontier guards/);
+  slide.next();
+  assert.match(slide.innerHTML, /A negotiated exception/);
+  slide.lang = 'nl';
+  assert.match(slide.innerHTML, /Van hen wordt geen jizya geheven/);
+  assert.match(slide.innerHTML, /Een onderhandelde uitzondering/);
+  assert.equal(jizyaJarajimaContrast.sides[0].sources[0].url, 'https://quran.com/at-tawbah/29');
+  assert.match(jizyaJarajimaContrast.sides[1].sources[0].url, /ablibrary\.net/);
 });
 
 test('Ibn Ḥazm contrast keeps the polemic and complete Almería anecdote in separate genres', () => {
