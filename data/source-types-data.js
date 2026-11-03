@@ -89,16 +89,40 @@ export const sourceTypes = {
       credit: 'Bibliothèque royale Hassaniya / Wikimedia Commons · public domain',
     },
     {
-      id: 'responsa',
-      title: { en: 'Jewish responsa', nl: 'Joodse responsa' },
-      example: { en: 'Maimonides’ responsa · 1765 edition', nl: 'Responsa van Maimonides · editie uit 1765' },
+      id: 'jewish-literature',
+      title: { en: 'Jewish literature', nl: 'Joodse literatuur' },
+      example: { en: 'Nistarot · 1855 printed edition', nl: 'Nistarot · gedrukte editie uit 1855' },
       detail: {
-        en: 'Responsa are written answers by rabbis to questions from communities. They can reveal the places, problems, and people behind a question.',
-        nl: 'Responsa zijn schriftelijke antwoorden van rabbijnen op vragen uit gemeenschappen. Ze kunnen plaatsen, problemen en mensen achter een vraag zichtbaar maken.',
+        en: 'Jewish writings include responsa, letters, and apocalyptic visions. In this later vision, an Ishmaelite ruler is imagined as a friend of Israel.',
+        nl: 'Joodse teksten omvatten responsa, brieven en apocalyptische visioenen. In dit latere visioen wordt een Ismaëlitische heerser voorgesteld als een vriend van Israël.',
       },
-      image: image("Pe'er ha-dor.jpg"),
-      record: commons("Pe'er ha-dor.jpg"),
-      credit: 'Wikimedia Commons · public domain',
+      image: 'assets/sources/nistarot-jellinek-1855-p79.jpg',
+      record: commons('Adolph Jellinek. Bet Ha-Midrasch. Vol.III.pdf'),
+      credit: 'Jellinek, Bet ha-Midrash III (1855), p. 79 / Wikimedia Commons · public domain',
+      reading: {
+        label: { en: 'A Jewish apocalypse · 8th c.', nl: 'Een Joodse apocalyps · 8e eeuw' },
+        title: { en: 'The “second king” and Jerusalem', nl: 'De ‘tweede koning’ en Jeruzalem' },
+        context: {
+          en: 'The Nistarot de-Rabbi Shimon bar Yochai (Secrets of Rabbi Shimʿon) is attributed to him, but took written form centuries after his lifetime. Scholars commonly read the “second king” as ʿUmar. The passage expresses a hope about Jerusalem; it is not a record of construction work.',
+          nl: 'De Nistarot de-Rabbi Shimon bar Yochai (Geheimen van rabbi Shimʿon) wordt aan hem toegeschreven, maar kreeg pas eeuwen na zijn leven een schriftelijke vorm. Onderzoekers herkennen in de ‘tweede koning’ meestal ʿUmar. De passage verwoordt een verwachting over Jeruzalem; zij documenteert geen bouwwerkzaamheden.',
+        },
+        note: {
+          en: 'This text shows how its writer imagined an Ishmaelite ruler, not what happened on the Temple Mount. The quotation follows Reeves’s translation with Yishmael/Yisrael spellings.',
+          nl: 'Deze tekst laat zien hoe de schrijver zich een Ismaëlitische heerser voorstelde, niet wat er op de Tempelberg gebeurde. De Engelse versie volgt Reeves met de spellingen Yishmael/Yisrael.',
+        },
+        paragraphs: {
+          en: [
+            'The second king who will arise from Yishmael will be a friend of Yisrael. He will repair their breaches and (fix) the breaches of the Temple and shape Mt. Moriah and make the whole of it a level plain.',
+          ],
+          nl: [
+            'De tweede koning die uit Ismaël zal opstaan, zal een vriend van Israël zijn. Hij zal hun bressen herstellen en (ook) de bressen van de Tempel herstellen, de berg Moria vormgeven en die helemaal tot een vlak terrein maken.',
+          ],
+        },
+        source: {
+          label: 'Nistarot (נסתרות), trans. John C. Reeves, p. 36',
+          url: 'https://almuslih.org/wp-content/uploads/2024/11/Reeves-J-%E2%80%93-The-Secrets-.pdf#page=6',
+        },
+      },
     },
     {
       id: 'geniza',
@@ -115,14 +139,42 @@ export const sourceTypes = {
     {
       id: 'christian',
       title: { en: 'Christian historians', nl: 'Christelijke kroniekschrijvers' },
-      example: { en: 'Theophanes’ Chronographia · later copy', nl: 'Chronographia van Theophanes · latere kopie' },
+      example: { en: 'Sebeos · later printed edition', nl: 'Sebeos · latere gedrukte editie' },
       detail: {
-        en: 'Christian chronicles offer accounts written from other communities and viewpoints, to compare with Islamic narratives.',
-        nl: 'Christelijke kronieken bieden verslagen uit andere gemeenschappen en perspectieven, te vergelijken met islamitische verhalen.',
+        en: 'A Christian chronicler describes Muḥammad, Jewish refugees, and Arab-Jewish cooperation. Read his account as a perspective to investigate, not a transcript of events.',
+        nl: 'Een christelijke kroniekschrijver beschrijft Muḥammad, Joodse vluchtelingen en samenwerking tussen Arabieren en Joden. Lees zijn verslag als een te onderzoeken perspectief, niet als een letterlijk verslag van de gebeurtenissen.',
       },
-      image: image('Supplément grec 327 - btv1b110047233 (1088 of 1105).jpg'),
-      record: commons('Supplément grec 327 - btv1b110047233 (1088 of 1105).jpg'),
-      credit: 'Bibliothèque nationale de France / Wikimedia Commons · public domain',
+      image: 'assets/sources/sebeos-1879.jpg',
+      record: 'https://digitale-sammlungen.ulb.uni-bonn.de/content/pageview/329524',
+      credit: 'University and State Library Bonn · 1879 edition · public domain',
+      reading: {
+        label: { en: 'An outside account · c. 660s', nl: 'Een verslag van buitenaf · ca. 660' },
+        title: { en: 'Sebeos on Jews, Arabs, and “Mahmet”', nl: 'Sebeos over Joden, Arabieren en “Mahmet”' },
+        context: {
+          en: 'The Armenian chronicler describes Jewish refugees leaving Edessa after the Byzantine–Persian war. This is his account of how they encountered the Arabs and Muḥammad.',
+          nl: 'De Armeense kroniekschrijver beschrijft Joodse vluchtelingen die Edessa verlaten na de Byzantijns-Perzische oorlog. Dit is zijn verslag van hun ontmoeting met de Arabieren en Muḥammad.',
+        },
+        note: {
+          en: 'Sebeos wrote decades after the events. This narrative should be compared with other sources, not read as an eyewitness transcript.',
+          nl: 'Sebeos schreef tientallen jaren na de gebeurtenissen. Vergelijk dit verhaal met andere bronnen; het is geen ooggetuigenverslag.',
+        },
+        paragraphs: {
+          en: [
+            'They set out into the desert and came to Arabia, among the children of Ishmael; they sought their help and explained that they were kinsmen according to the Bible. Although they (the Arabs) were willing to accept this close kinship, they (the Jews) nevertheless could not convince the mass of the people because their cults were different.',
+            'At this time there was an Ishmaelite called Mahmet, a merchant; he presented himself to them as though at God’s command, as a preacher, as the way of truth, and taught them to know the God of Abraham, for he was very well informed and very well acquainted with the story of Moses. As the command came from on high, they all united under the authority of a single man, under a single law and, abandoning vain cults, returned to the living God who had revealed himself to their father Abraham…',
+            'Then they all gathered together from Havila unto Shur and before Egypt; they came out of the desert of Pharan divided into twelve tribes according to the lineages of their patriarchs. They distributed among their tribes the twelve thousand Israelites, a thousand per tribe, to guide them into the land of Israel… All that remained of the peoples of the children of Israel came to join them, and they constituted a mighty army.',
+          ],
+          nl: [
+            'Zij trokken de woestijn in en kwamen in Arabië, bij de kinderen van Ismaël; zij vroegen hun om hulp en legden uit dat zij volgens de Bijbel verwanten waren. Hoewel zij (de Arabieren) bereid waren deze nauwe verwantschap te aanvaarden, konden zij (de Joden) de grote massa van het volk toch niet overtuigen, omdat hun religieuze gebruiken verschilden.',
+            'In die tijd was er een Ismaëliet genaamd Mahmet, een koopman; hij trad voor hen op alsof hij op Gods bevel handelde, als prediker van de ware weg, en leerde hun de God van Abraham kennen, want hij was goed ingelicht en zeer vertrouwd met het verhaal van Mozes. Omdat het bevel van boven kwam, verenigden zij zich allen onder het gezag van één man, onder één wet, en keerden zij, nadat zij ijdele culten hadden verlaten, terug naar de levende God die zich aan hun vader Abraham had geopenbaard…',
+            'Daarna kwamen zij allen bijeen van Havila tot Shur en voor Egypte; zij trokken de woestijn van Pharan uit, verdeeld in twaalf stammen volgens de afstamming van hun aartsvaders. Zij verdeelden de twaalfduizend Israëlieten over hun stammen, duizend per stam, om hen naar het land Israël te leiden… Al wat er van de volken van de kinderen van Israël over was, sloot zich bij hen aan, en zij vormden een machtig leger.',
+          ],
+        },
+        source: {
+          label: 'Sebeos, quoted in Robert Hoyland, “Sebeos, the Jews and the Rise of Islam,” p. 89',
+          url: 'https://almuslih.org/wp-content/uploads/Library/Hoyland%2C%20R%20-%20Sebeos%2C%20the%20Jews%20and%20the%20Rise%20of%20Islam.pdf#page=1',
+        },
+      },
     },
   ],
 };

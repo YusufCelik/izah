@@ -86,6 +86,21 @@ def main():
                         issues.append({"variant": variant, "mode": mode, "slide": "geo", "stage": "south", "issue": "inscription image did not load"})
                     if page.evaluate("document.body.scrollWidth > innerWidth + 2"):
                         issues.append({"variant": variant, "mode": mode, "slide": "geo", "stage": "south", "issue": "horizontal overflow"})
+                    page.evaluate("location.hash = 'sources'")
+                    page.locator("#source-inventory").evaluate("slide => slide.select(6)")
+                    page.wait_for_timeout(180)
+                    page.screenshot(path=str(OUTPUT / f"{variant}-{mode}-03-sources-nistarot.png"), full_page=True)
+                    if page.evaluate("document.body.scrollWidth > innerWidth + 2"):
+                        issues.append({"variant": variant, "mode": mode, "slide": "sources", "stage": "Nistarot", "issue": "horizontal overflow"})
+                    if not page.locator(".source-reading-text blockquote").is_visible():
+                        issues.append({"variant": variant, "mode": mode, "slide": "sources", "stage": "Nistarot", "issue": "reading passage missing"})
+                    page.locator("#source-inventory").evaluate("slide => slide.select(8)")
+                    page.wait_for_timeout(180)
+                    page.screenshot(path=str(OUTPUT / f"{variant}-{mode}-03-sources-sebeos.png"), full_page=True)
+                    if page.evaluate("document.body.scrollWidth > innerWidth + 2"):
+                        issues.append({"variant": variant, "mode": mode, "slide": "sources", "stage": "Sebeos", "issue": "horizontal overflow"})
+                    if not page.locator(".source-reading-text blockquote").is_visible():
+                        issues.append({"variant": variant, "mode": mode, "slide": "sources", "stage": "Sebeos", "issue": "reading passage missing"})
                     page.evaluate("location.hash = 'yemen'")
                     page.locator("#fighting-yemen-contrast").evaluate("slide => slide.select(2)")
                     page.wait_for_timeout(180)

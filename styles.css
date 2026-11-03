@@ -199,6 +199,25 @@ source-path { display: block; }
 .source-path-controls button { border: 0; background: none; color: var(--accent); cursor: pointer; font-size: 11px; font-weight: 700; }
 .source-path-controls button:hover { color: var(--ink); }
 .source-path-controls button:disabled { color: var(--faint); opacity: .5; cursor: default; }
+.source-path-canvas.is-reading { height: auto; min-height: max(650px, calc(100svh - 215px)); overflow: visible; }
+.source-path-reading { flex: 1; display: grid; grid-template-columns: minmax(230px, 27%) minmax(0, 1fr); border-bottom: 1px solid var(--line); }
+.source-reading-context { display: flex; flex-direction: column; align-items: start; padding: clamp(24px, 3vw, 45px); border-right: 2px solid var(--outline); background: var(--palette-plum); color: var(--palette-paper); }
+.source-reading-index { margin-bottom: 25px; padding: 7px 10px; background: var(--signal); color: var(--palette-paper); font: 14px var(--font-data); }
+.source-reading-context .section-kicker { color: var(--palette-sage); font-size: 10px; }
+.source-reading-context h3 { margin: 9px 0 18px; color: var(--palette-paper); font: 800 clamp(26px, 2.4vw, 36px)/1.08 var(--font-title); }
+.source-reading-context > p:not(.section-kicker) { margin: 0; color: var(--palette-paper); font: 14px/1.52 var(--font-reading); }
+.source-reading-context button { margin-top: auto; padding: 15px 0 0; border: 0; background: transparent; color: var(--palette-sage); cursor: pointer; font: 800 12px var(--font-title); }
+.source-reading-context button:hover { color: var(--palette-paper); }
+.source-reading-text { min-width: 0; margin: 0; padding: clamp(23px, 2.9vw, 42px) clamp(27px, 3.3vw, 54px); background: var(--stage); }
+.source-reading-text figcaption { margin-bottom: 14px; color: var(--accent); font: 800 11px var(--font-title); letter-spacing: .08em; text-transform: uppercase; }
+.source-reading-text blockquote { margin: 0 0 18px; padding-left: 18px; border-left: 6px solid var(--secondary); }
+.source-reading-text blockquote p { margin: 0 0 13px; color: var(--display-ink); font: 16px/1.48 var(--font-reading); }
+.source-reading-text blockquote p:last-child { margin-bottom: 0; }
+.source-reading-text a { color: var(--source); font: 800 11px/1.3 var(--font-title); text-decoration: none; }
+.source-reading-text a:hover { color: var(--accent); text-decoration: underline; }
+.source-reading-text.is-brief { display: flex; flex-direction: column; justify-content: center; }
+.source-reading-text.is-brief blockquote p { font-size: clamp(20px, 2vw, 28px); line-height: 1.35; }
+.source-reading-text.is-brief a { font-size: 12px; }
 
 versus-slide { display: block; }
 .versus-slide { padding-top: clamp(21px, 3vh, 35px); }
@@ -556,6 +575,7 @@ geo-regions-slide, inscription-slide, origins-slide { display: block; }
 
 @media (max-width: 950px) {
   .geo-layout, .inscription-body { grid-template-columns: 1fr; }
+  .source-path-reading { grid-template-columns: minmax(210px, 30%) minmax(0, 1fr); }
   .geo-layout.has-inscription { grid-template-columns: 1fr; }
   .geo-map-wrap, .inscription-visual { border-right: 0; border-bottom: 2px solid var(--outline); }
   .geo-map { max-height: 500px; }
@@ -566,6 +586,15 @@ geo-regions-slide, inscription-slide, origins-slide { display: block; }
 }
 @media (max-width: 660px) {
   .geo-slide, .inscription-slide, .origins-slide { padding-top: 18px; }
+  .source-path-reading { grid-template-columns: 1fr; }
+  .source-reading-context { padding: 22px; border-right: 0; border-bottom: 2px solid var(--outline); }
+  .source-reading-index { margin-bottom: 13px; }
+  .source-reading-context h3 { margin-bottom: 10px; font-size: 28px; }
+  .source-reading-context button { margin-top: 18px; }
+  .source-reading-text { padding: 23px 19px; }
+  .source-reading-text blockquote { padding-left: 13px; }
+  .source-reading-text blockquote p { font-size: 15px; line-height: 1.52; }
+  .source-reading-text.is-brief blockquote p { font-size: 20px; line-height: 1.42; }
   .geo-canvas, .inscription-canvas, .origins-canvas { min-height: 0; box-shadow: 4px 4px 0 var(--hard-shadow); }
   .geo-heading, .inscription-heading, .origins-heading { padding: 20px 17px; }
   .inscription-heading { flex-wrap: wrap; }
